@@ -84,7 +84,7 @@ input:hover, select:hover{
 	display: inline-block;
 	width: 100%;
 	background-color: #323232;
-    background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.8);
     height: 70px;
     padding: 0 15px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -155,6 +155,8 @@ input:hover, select:hover{
 	line-height: 31px;
 	font-size: 20px;
 	background-color: #C0CC00;
+	background-color: #323232;
+	background-color: rgba(0,0,0,0.8);
 	display: none;
 	position: fixed;
 	bottom: 15px;
