@@ -1,0 +1,229 @@
+/*
+green: #97b00d;
+orange: #d45500;
+boxes: #f3eadc;
+filter: #FAF7F2;
+*/
+.clearfix:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+}
+.clearfix {
+	display:inline-block;
+}
+.img-reponsive{
+	width: 100%;
+	height: auto;
+}
+html[xmlns] .clearfix {
+	display:block;
+}
+* html .clearfix {
+	height:1%;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+body{
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: normal;
+	font-size: 14px;
+}
+a{
+	transition: all 300ms ease-in-out;
+}
+a:hover, a:focus{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style-type: none;
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+h3{
+	font-size: 16px;
+}
+input, select{
+	box-shadow: none;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	background-color: #ffffff;
+	transition: all 300ms ease-in-out;
+	padding: 2px 5px;
+}
+input:hover, select:hover{
+	-webkit-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.5);
+}
+.content{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.menu{
+	position: fixed;
+	top: 0;
+	display: inline-block;
+	width: 100%;
+	background-color: #323232;
+    background-color: rgba(0,0,0,0.8);
+    height: 70px;
+    padding: 0 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.menu>li{
+    float: left;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 2px;
+    padding-bottom: 13px;
+    margin-top: 12px;
+    position: relative;
+}
+.menu li a{
+	width: 162px;
+	height: auto;
+	text-align: center;
+	line-height: 45px;
+	color: #ffffff;
+	display: inline-block;
+}
+.menu>li.active>a, .menu>li>a:hover{
+	background-color: #C0CC00;
+}
+.menu>li>ul a:hover{
+	background-color: #97a002;
+}
+.menu>li.active{
+	border-bottom: 5px solid #C0CC00;
+}
+.menu>li>ul>li>a{
+	background-color: #C0CC00;
+}
+.menu>li>ul>li{
+	border-bottom: 1px solid #97a002;
+}
+.menu>li ul{
+	display: none;
+	padding-top: 10px;
+	position: absolute;
+}
+.goup{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 22px;
+	background-color: #000;
+	display: none;
+	position: fixed;
+	bottom: 15px;
+	right:15px;
+	color: #ffffff;
+	border-radius: 3px;
+	text-align: center;
+}
+.goup.visb{
+	display: block;
+}
+/*footer{
+	position: fixed;
+	bottom: 0;
+	display: block;
+	padding: 20px 15px;
+	width: 100%;
+	background-color: #323232;
+    background-color: rgba(0,0,0,0.8);
+    content: "";
+    display: block;
+}
+.up{
+	position: absolute;
+	top: -27px;
+	left: 50%;
+	margin-left: -27px;
+	height: 53px;
+    width: 54px;
+    text-align: center;
+    line-height: 53px;
+    background-image: url('../images/circle.png');
+	border-radius: 30px;
+	background-color: #0e0e0e;
+	cursor: pointer;
+	font-size: 30px;
+	color: #ffffff;
+}
+.hider{
+	display: none;
+}
+footer ul li{
+    float: left;
+    margin-right: 10px;
+}
+footer ul li:last-child{
+	margin-right: 0;
+}
+footer ul li a, .faceb{
+	height: 53px;
+    width: 54px;
+    background-image: url('../images/circle.png');
+    text-align: center;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    transition: all 300ms ease-in-out;
+}
+footer ul li a:hover, .faceb:hover{
+	opacity: 0.5;
+	color: #ffffff;
+}
+.faceb{
+	float: right;
+}
+*/
+/*--------------------------*/
+/*  M E D I A Q U E R Y S  */
+/*------------------------*/
+@media (max-width:1199px) {
+	.menu li a{
+		width: 125px;
+		height: 45px;
+	}
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* csak tablet felett */
+/* md-alatt */
+@media (max-width:991px) {
+	
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* mid-small */
+/*ms*/
+@media (max-width: 768px) {
+	
+
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* mobil */
+/*xs*/
+@media (max-width:479px) {
+	
+}
+/*mobil hamburger menu és logo nem érjen össze*/
+@media (max-width:365px) {
+	
+}
