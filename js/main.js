@@ -1,22 +1,36 @@
 $(document).ready(function(){
   $('.carousel').slick({
-  	infinite: true,
-  	prevArrow: $('.prev'),
+    infinite: true,
+    prevArrow: $('.prev'),
     nextArrow: $('.next'),
     lazyLoad: 'ondemand',
   });
-/*Scroll to top*/
-$('.goup').click(function() {
-    $('html, body').animate({
-        scrollTop: $('body').offset().top
-    }, 1000);
-});
+  /*Scroll to top*/
+  $('.goup').click(function() {
+      $('html, body').animate({
+          scrollTop: $('body').offset().top
+      }, 1000);
+  });
+  /*Toggle menu elements child visibility*/
+  var ww = $(window).width();
+  if (ww > 768){
+    $( ".menu>li" ).hover(function() {
+      $(this).find('ul').toggle();
+    });
+  }
+  else{
+    $( ".menu>li" ).click(function() {
+      $(this).find('ul').slideToggle();
+    });
+  }
+  /*Show or hide menu on mibl view*/
+  $('.menutoggle').click(function() {
+    console.log('haha');
+    $('.menu').slideToggle();
+  });
 });
 
-/*Toggle menu elements child visibility*/
-$( ".menu>li" ).hover(function() {
-  $(this).find('ul').toggle();
-});
+
 /*
 $( "footer .up" ).click(function() {
   $('.hider').slideToggle();
