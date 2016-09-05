@@ -36,6 +36,12 @@ $( "footer .up" ).click(function() {
   $('.hider').slideToggle();
 });
 */
+/*change lang*/
+$( ".lang li" ).click(function() {
+  var url = window.location.href;
+  console.log(url);
+});
+
 /*Toggle visibilty of goup button*/
 $(window).scroll(function () {
 	var scrollPosition = $(this).scrollTop();
