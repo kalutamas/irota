@@ -133,23 +133,24 @@ input:hover, select:hover{
 	margin:12px 0 0 15px;
 }
 .lang li{
-	visibility: hidden;
+	display: none;
 }
 .lang:hover li{
-	visibility: visible;
+	display: block;
 }
 .lang li.active{
-	visibility: visible;
+	display: block;
 	position: relative;
 }
 .lang li a{
     color: #ffffff;
     height: 45px;
     line-height: 42px;
-    display: inline-block;
+    display: block;
     width: 30px;
     text-align: center;
     margin-bottom: 1px;
+    cursor: pointer;
 }
 .lang:hover li a{
 	background-color: #c0cc00;

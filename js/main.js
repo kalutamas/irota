@@ -37,9 +37,16 @@ $( "footer .up" ).click(function() {
 });
 */
 /*change lang*/
-$( ".lang li" ).click(function() {
-  var url = window.location.href;
-  console.log(url);
+$( ".lang li a" ).click(function() {
+  var actlang = $(".lang li.active a").html()
+  url = window.location.href
+  actli = $(this).html();
+  array = url.split(actlang)
+  newurl = (array[0] + actli + array[1]);
+  if ( actli != actlang) {
+    window.location = newurl;
+  }
+  
 });
 
 /*Toggle visibilty of goup button*/
