@@ -41,17 +41,17 @@ $( ".lang li a" ).click(function() {
   var actlang = $(".lang li.active a").html()
   url = window.location.href
   actli = $(this).html();
-  array = url.split(actlang)
-  newurl = (array[0] + actli + array[1]);
+  array = url.split("/"+actlang+"/")
+  newurl = (array[0] + "/" + actli + "/" + array[1]);
   if ( actli != actlang) {
     window.location = newurl;
+    // console.log('');
   }
   
 });
-
 /*Toggle visibilty of goup button*/
 $(window).scroll(function () {
 	var scrollPosition = $(this).scrollTop();
-	$('.goup').attr('class', scrollPosition < 10 ? "goup" : "goup visb");
+	$('.goup').attr('class', scrollPosition < 500 ? "goup" : "goup visb");
 });
 
