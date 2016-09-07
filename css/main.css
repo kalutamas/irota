@@ -36,7 +36,12 @@ body{
 	font-feature-settings: "liga";
 	text-rendering: optimizelegibility;
 	background-color: #323232;
-	color: #ffffff
+	color: #ffffff;
+	text-rendering: optimizeLegibility;
+	-moz-font-feature-settings: 'liga';
+	-ms-font-feature-settings: 'liga';
+	-webkit-font-feature-settings: 'liga';
+	font-feature-settings: 'liga';
 }
 a{
 	text-decoration: none;
@@ -62,7 +67,7 @@ h2{
 	width: 100%;
 	border-bottom: 10px solid #C0CC00;
 	font-weight: normal;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 	margin: 15px 0 25px 0;
 }
 input, select{
@@ -88,8 +93,9 @@ input:hover, select:hover{
 	position: relative;
 }
 .content{
-	background-color: rgba(0,0,0,0.7);
-    padding-bottom: 453px;
+	background-color: rgba(0,0,0,0.75);
+	padding-bottom: 453px;
+	margin-bottom: -18px;
 }
 .menutoggle{
 	display: none;
@@ -108,7 +114,6 @@ input:hover, select:hover{
 }
 .menu>li{
 	float: left;
-	font-size: 18px;
 	text-transform: uppercase;
 	margin-right: 2px;
 	padding-bottom: 8px;
@@ -116,12 +121,13 @@ input:hover, select:hover{
 	position: relative;
 }
 .menu li a{
-	width: 145px;
+	width: 165px;
 	height: auto;
 	text-align: center;
 	line-height: 45px;
 	color: #ffffff;
 	display: inline-block;
+	font-size: 19px;
 }
 .menu>li.active>a, .menu>li>a:hover{
 	background-color: #C0CC00;
@@ -159,14 +165,14 @@ input:hover, select:hover{
 	position: relative;
 }
 .lang li a{
-    color: #ffffff;
-    height: 45px;
-    line-height: 43px;
-    display: block;
-    width: 30px;
-    text-align: center;
-    margin-bottom: 1px;
-    cursor: pointer;
+	color: #ffffff;
+	height: 45px;
+	line-height: 43px;
+	display: block;
+	width: 30px;
+	text-align: center;
+	margin-bottom: 1px;
+	cursor: pointer;
 }
 .lang:hover li a{
 	background-color: #c0cc00;
@@ -179,6 +185,35 @@ input:hover, select:hover{
 	height: 100%;
 	width: 100%;
 }
+.carousel, .slick-list, .slick-track{
+	height: 100%;
+	width: 100%;
+}
+.carousel-container .slide1, .carousel-container .slide2, .carousel-container .slide3, .carousel-container .slide4, .carousel-container .slide5{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.carousel-container .slide1{
+	background-image: url(../images/slide1.jpg);
+}
+.carousel-container .slide2{
+	background-image: url(../images/slide2.jpg);
+}
+.carousel-container .slide3{
+	background-image: url(../images/slide3.jpg);
+}
+.carousel-container .slide4{
+	background-image: url(../images/slide4.jpg);
+}
+.carousel-container .slide5{
+	background-image: url(../images/slide5.jpg);
+}
+
+
 .next, .prev {
 	position: fixed;
 	top: 50%;
@@ -217,8 +252,12 @@ input:hover, select:hover{
 .goup.visb{
 	display: block;
 }
-.logocont{
-	padding: 150px 0 100px 0;
+.logocont img{
+	margin: 150px 0 100px 0;
+}
+.col-p{
+	padding-left: 70px;
+	padding-right: 70px;
 }
 /*footer{
 	position: fixed;
