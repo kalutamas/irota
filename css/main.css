@@ -167,7 +167,7 @@ input:hover, select:hover{
 .lang li a{
 	color: #ffffff;
 	height: 45px;
-	line-height: 43px;
+	line-height: 45px;
 	display: block;
 	width: 30px;
 	text-align: center;
@@ -320,7 +320,7 @@ footer ul li a:hover, .faceb:hover{
 /*------------------------*/
 @media (max-width:1199px) {
 	.menu li a{
-		width: 155px;
+		width: 148px;
 	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
@@ -335,8 +335,6 @@ footer ul li a:hover, .faceb:hover{
 	}
 	.menu li a {
 		width: 118px;
-		height: 35px;
-		line-height: 35px;
 	}
 }
 /* ------------------------------------------------------------------------------------------------------ */

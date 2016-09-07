@@ -42,7 +42,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 @media (min-width: 768px) {
   .container {
-    width: 420px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
