@@ -322,6 +322,10 @@ footer ul li a:hover, .faceb:hover{
 	.menu li a{
 		width: 148px;
 	}
+	.col-p{
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
 /* csak tablet felett */
@@ -334,7 +338,8 @@ footer ul li a:hover, .faceb:hover{
 		font-size: 14px;
 	}
 	.menu li a {
-		width: 118px;
+    	width: 110px;
+    	font-size: 14px;
 	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
@@ -397,7 +402,16 @@ footer ul li a:hover, .faceb:hover{
 /* mobil */
 /*xs*/
 @media (max-width:479px) {
-	
+	.col-p{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.prev{
+		left: 8px;
+	} 
+	.next{
+		right: 8px;
+	}
 }
 /*mobil hamburger menu és logo nem érjen össze*/
 @media (max-width:365px) {
