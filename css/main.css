@@ -511,6 +511,10 @@ input:hover, select:hover{
 	background-image: url(../images/5_Mansion_3.jpg);
 }
 
+.contact .slide1{
+	background-image: url(../images/6_Contact&Route.jpg);
+}
+
 .next, .prev {
 	position: fixed;
 	top: 50%;
