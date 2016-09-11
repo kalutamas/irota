@@ -70,6 +70,17 @@ h2{
 	padding-bottom: 8px;
 	margin: 15px 0 25px 0;
 }
+h3{
+	font-size: 25px;
+	color: #C0CC00;
+	width: 100%;
+	border-bottom: 5px solid #C0CC00;
+	padding-bottom: 8px;
+	margin: 25px 0 25px 0;
+}
+h3 span{
+	font-weight: normal;
+}
 input, select{
 	box-shadow: none;
 	border: 1px solid #ffffff;
