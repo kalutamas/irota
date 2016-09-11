@@ -30,6 +30,15 @@ $(document).ready(function(){
   });
 });
 
+/*Menu stay green on child's hover*/
+$('.menu>li ul').mouseenter(function(){
+  console.log('hah');
+ $(this).parent('li').addClass('hovered');
+});
+$('.menu>li ul').mouseleave(function(){
+  console.log('heh');
+ $(this).parent('li').removeClass('hovered');
+});
 
 /*
 $( "footer .up" ).click(function() {
