@@ -497,6 +497,20 @@ input:hover, select:hover{
 	background-image: url(../images/4C_FurtherAway_3.jpg);
 }
 
+.aboutus .slide1{
+	background-image: url(../images/5_AboutUs.jpg);
+}
+
+.mansion .slide1{
+	background-image: url(../images/5_Mansion_1.jpg);
+}
+.mansion .slide2{
+	background-image: url(../images/5_Mansion_2.jpg);
+}
+.mansion .slide3{
+	background-image: url(../images/5_Mansion_3.jpg);
+}
+
 .next, .prev {
 	position: fixed;
 	top: 50%;
