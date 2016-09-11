@@ -15,7 +15,7 @@ $(document).ready(function(){
   var ww = $(window).width();
   if (ww > 768){
     $( ".menu>li" ).hover(function() {
-      $(this).find('ul').toggle();
+      $(this).find('ul').fadeToggle(300);
     });
   }
   else{
