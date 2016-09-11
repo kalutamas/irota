@@ -32,11 +32,9 @@ $(document).ready(function(){
 
 /*Menu stay green on child's hover*/
 $('.menu>li ul').mouseenter(function(){
-  console.log('hah');
  $(this).parent('li').addClass('hovered');
 });
 $('.menu>li ul').mouseleave(function(){
-  console.log('heh');
  $(this).parent('li').removeClass('hovered');
 });
 
@@ -45,6 +43,7 @@ $( "footer .up" ).click(function() {
   $('.hider').slideToggle();
 });
 */
+
 /*change lang*/
 $( ".lang li a" ).click(function() {
   var actlang = $(".lang li.active a").html()
@@ -54,9 +53,7 @@ $( ".lang li a" ).click(function() {
   newurl = (array[0] + "/" + actli + "/" + array[1]);
   if ( actli != actlang) {
     window.location = newurl;
-    // console.log('');
   }
-  
 });
 /*Toggle visibilty of goup button*/
 $(window).scroll(function () {

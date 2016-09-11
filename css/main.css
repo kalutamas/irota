@@ -94,7 +94,9 @@ input:hover, select:hover{
 }
 .content{
 	background-color: rgba(0,0,0,0.75);
-	padding-bottom: 453px;
+	/*padding-bottom: 453px;*/
+	min-height: 700px;
+	padding-bottom: 50px;
 	margin-bottom: -18px;
 }
 .menutoggle{
@@ -192,7 +194,15 @@ input:hover, select:hover{
 	height: 100%;
 	width: 100%;
 }
-.carousel-container .slide1, .carousel-container .slide2, .carousel-container .slide3, .carousel-container .slide4, .carousel-container .slide5{
+.carousel-container .slide1, 
+.carousel-container .slide2, 
+.carousel-container .slide3, 
+.carousel-container .slide4, 
+.carousel-container .slide5, 
+.carousel-container .slide6, 
+.carousel-container .slide7, 
+.carousel-container .slide8, 
+.carousel-container .slide9{
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -215,6 +225,188 @@ input:hover, select:hover{
 .carousel-container .slide5{
 	background-image: url(../images/slide5.jpg);
 }
+/*
+.inanutshell .slide1{
+	background-image: url(../images/2C_UpperHouse_1.jpg);
+}
+.inanutshell .slide2{
+	background-image: url(../images/2D_PoolGarden_1.jpg);
+}
+.inanutshell .slide3{
+	background-image: url(../images/2B_MiddleHouse_1.jpg);
+}
+.inanutshell .slide4{
+	background-image: url(../images/2D_PoolGarden_7.jpg);
+}
+.inanutshell .slide5{
+	background-image: url(../images/2A_LowerHouse_1.jpg);
+}
+.inanutshell .slide6{
+	background-image: url(../images/2C_UpperHouse_9.jpg);
+}
+.accomodation .slide1{
+	background-image: url(../images/2A_LowerHouse_2.jpg);
+}
+.accomodation .slide2{
+	background-image: url(../images/2A_LowerHouse_6.jpg);
+}
+.accomodation .slide3{
+	background-image: url(../images/2B_MiddleHouse_2.jpg);
+}
+.accomodation .slide4{
+	background-image: url(../images/2B_MiddleHouse_6.jpg);
+}
+.accomodation .slide5{
+	background-image: url(../images/2C_UpperHouse_4.jpg);
+}
+.accomodation .slide6{
+	background-image: url(../images/2C_UpperHouse_9.jpg);
+}
+.accomodation .slide7{
+	background-image: url(../images/2D_GardenPool_2.jpg);
+}
+.accomodation .slide8{
+	background-image: url(../images/2D_GardenPool_9.jpg);
+}
+
+*/
+
+.lowerhouse .slide1{
+	background-image: url(../images/2A_LowerHouse_1.jpg);
+}
+.lowerhouse .slide2{
+	background-image: url(../images/2A_LowerHouse_2.jpg);
+}
+.lowerhouse .slide3{
+	background-image: url(../images/2A_LowerHouse_3.jpg);
+}
+.lowerhouse .slide4{
+	background-image: url(../images/2A_LowerHouse_4.jpg);
+}
+.lowerhouse .slide5{
+	background-image: url(../images/2A_LowerHouse_5.jpg);
+}
+.lowerhouse .slide6{
+	background-image: url(../images/2A_LowerHouse_6.jpg);
+}
+.lowerhouse .slide7{
+	background-image: url(../images/2A_LowerHouse_7.jpg);
+}
+
+.middlehouse .slide1{
+	background-image: url(../images/2B_MiddleHouse_1.jpg);
+}
+.middlehouse .slide2{
+	background-image: url(../images/2B_MiddleHouse_2.jpg);
+}
+.middlehouse .slide3{
+	background-image: url(../images/2B_MiddleHouse_3.jpg);
+}
+.middlehouse .slide4{
+	background-image: url(../images/2B_MiddleHouse_4.jpg);
+}
+.middlehouse .slide5{
+	background-image: url(../images/2B_MiddleHouse_5.jpg);
+}
+.middlehouse .slide6{
+	background-image: url(../images/2B_MiddleHouse_6.jpg);
+}
+.middlehouse .slide7{
+	background-image: url(../images/2B_MiddleHouse_7.jpg);
+}
+.middlehouse .slide8{
+	background-image: url(../images/2B_MiddleHouse_8.jpg);
+}
+.middlehouse .slide9{
+	background-image: url(../images/2B_MiddleHouse_9.jpg);
+}
+
+.upperhouse .slide1{
+	background-image: url(../images/2C_UpperHouse_1.jpg);
+}
+.upperhouse .slide2{
+	background-image: url(../images/2C_UpperHouse_2.jpg);
+}
+.upperhouse .slide3{
+	background-image: url(../images/2C_UpperHouse_3.jpg);
+}
+.upperhouse .slide4{
+	background-image: url(../images/2C_UpperHouse_4.jpg);
+}
+.upperhouse .slide5{
+	background-image: url(../images/2C_UpperHouse_5.jpg);
+}
+.upperhouse .slide6{
+	background-image: url(../images/2C_UpperHouse_6.jpg);
+}
+.upperhouse .slide7{
+	background-image: url(../images/2C_UpperHouse_7.jpg);
+}
+.upperhouse .slide8{
+	background-image: url(../images/2C_UpperHouse_8.jpg);
+}
+.upperhouse .slide9{
+	background-image: url(../images/2C_UpperHouse_9.jpg);
+}
+
+.gardenandpool .slide1{
+	background-image: url(../images/2D_GardenPool_1.jpg);
+}
+.gardenandpool .slide2{
+	background-image: url(../images/2D_GardenPool_2.jpg);
+}
+.gardenandpool .slide3{
+	background-image: url(../images/2D_GardenPool_3.jpg);
+}
+.gardenandpool .slide4{
+	background-image: url(../images/2D_GardenPool_4.jpg);
+}
+.gardenandpool .slide5{
+	background-image: url(../images/2D_GardenPool_5.jpg);
+}	
+.gardenandpool .slide6{
+	background-image: url(../images/2D_GardenPool_6.jpg);
+}
+.gardenandpool .slide7{
+	background-image: url(../images/2D_GardenPool_7.jpg);
+}
+.gardenandpool .slide8{
+	background-image: url(../images/2D_GardenPool_8.jpg);
+}
+.gardenandpool .slide9{
+	background-image: url(../images/2D_GardenPool_9.jpg);
+}
+
+.bpapartment .slide1{
+	background-image: url(../images/2E_BudapestCityApartment_1.jpg);
+}
+.bpapartment .slide2{
+	background-image: url(../images/2E_BudapestCityApartment_2.jpg);
+}
+.bpapartment .slide3{
+	background-image: url(../images/2E_BudapestCityApartment_3.jpg);
+}
+.bpapartment .slide4{
+	background-image: url(../images/2E_BudapestCityApartment_4.jpg);
+}
+.bpapartment .slide5{
+	background-image: url(../images/2E_BudapestCityApartment_5.jpg);
+}
+
+.econess .slide1{
+	background-image: url(../images/2F_Econess.jpg);
+}
+
+.todo .slide1{
+	background-image: url(../images/4A_Birdwatching_1.jpg);
+}
+.todo .slide2{
+	background-image: url(../images/4B_CloseBy_2.jpg);
+}
+.todo .slide3{
+	background-image: url(../images/4C_FurtherAway_3);
+}
+
 .next, .prev {
 	position: fixed;
 	top: 50%;
@@ -271,6 +463,57 @@ input:hover, select:hover{
 }
 .col-p p{
 	line-height: 1.4;
+}
+p a{
+	color: #C0CC00;
+	text-decoration: underline;
+}
+p a:hover{
+	background-color: #C0CC00;
+	background-color: rgba(192,204,0,0.5);
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 2px;
+}
+.btnbox{
+	text-align: center;
+}
+.btnbox a{
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+.btnbox a img{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.btnbox a img{
+	transition: all 300ms ease-in-out;
+}
+.btnbox a img:last-child{
+	opacity: 0;
+}
+.btnbox a:hover img:last-child{
+	opacity: 1;
+}
+.bigbtn{
+	float: right;
+	display: inline-block;
+	padding: 5px 10px;
+	border: 2px solid #C0CC00;
+	color: #C0CC00;
+	text-transform: uppercase;
+}
+.bigbtn span{
+	display: inline-block;
+}
+.bigbtn i{
+	margin-top: -10px;
 }
 /*footer{
 	position: fixed;
