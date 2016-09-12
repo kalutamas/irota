@@ -105,10 +105,9 @@ input:hover, select:hover{
 }
 .content{
 	background-color: rgba(0,0,0,0.75);
-	/*padding-bottom: 453px;*/
-	min-height: 700px;
-	padding-bottom: 50px;
-	margin-bottom: -18px;
+	min-height: 650px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .menutoggle{
 	display: none;
