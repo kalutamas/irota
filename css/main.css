@@ -573,9 +573,12 @@ input:hover, select:hover{
 }
 p a{
 	color: #C0CC00;
-	text-decoration: underline;
+
 }
 p a:hover{
+	text-decoration: underline;
+}
+jobbefekt{
 	background-color: #C0CC00;
 	background-color: rgba(192,204,0,0.5);
 	color: #ffffff;
