@@ -133,7 +133,8 @@ input:hover, select:hover{
 	position: relative;
 }
 .menu li a{
-	width: 165px;
+	/*width: 165px;*/
+	padding: 0 30px;
 	height: auto;
 	text-align: center;
 	line-height: 45px;
@@ -590,12 +591,12 @@ input:hover, select:hover{
 }
 p a{
 	color: #C0CC00;
-
+ text-decoration: underline;
 }
-p a:hover{
+szareffekt{
 	text-decoration: underline;
 }
-jobbefekt{
+p a:hover{
 	background-color: #C0CC00;
 	background-color: rgba(192,204,0,0.5);
 	color: #ffffff;
