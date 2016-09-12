@@ -240,13 +240,13 @@ input:hover, select:hover{
 	background-image: url(../images/2C_UpperHouse_1.jpg);
 }
 .inanutshell .slide2{
-	background-image: url(../images/2D_PoolGarden_1.jpg);
+	background-image: url(../images/2D_GardenPool_1.jpg);
 }
 .inanutshell .slide3{
 	background-image: url(../images/2B_MiddleHouse_1.jpg);
 }
 .inanutshell .slide4{
-	background-image: url(../images/2D_PoolGarden_7.jpg);
+	background-image: url(../images/2D_GardenPool_7.jpg);
 }
 .inanutshell .slide5{
 	background-image: url(../images/2A_LowerHouse_1.jpg);
@@ -413,7 +413,7 @@ input:hover, select:hover{
 	background-image: url(../images/4B_CloseBy_2.jpg);
 }
 .todo .slide3{
-	background-image: url(../images/4C_FurtherAway_3);
+	background-image: url(../images/4C_FurtherAway_3.jpg);
 }
 
 .inirota .slide1{
@@ -536,7 +536,7 @@ input:hover, select:hover{
 .next:hover{
 	margin-right: -3px;
 }
-.goup{
+/*.goup{
 	width: 35px;
 	height: 35px;
 	line-height: 31px;
@@ -557,6 +557,23 @@ input:hover, select:hover{
 	line-height: 27px;
 	color: #ffffff;
 	cursor: pointer;
+}*/
+.goup{
+	width: 50px;
+	height: 50px;
+	display: none;
+	position: fixed;
+	bottom: 15px;
+	right:15px;
+	transition: all 300ms ease-in-out;
+	background-image: url(../images/goup.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	text-indent: -999px;
+	cursor: pointer;
+}
+.goup:hover{
+	bottom: 18px;
 }
 .goup.visb{
 	display: block;
@@ -624,6 +641,18 @@ jobbefekt{
 }
 .bigbtn i{
 	margin-top: -10px;
+}
+.address i{
+	content: " ";
+	display: inline-block;
+	min-width: 17px;
+	color: #C0CC00;
+}
+.address strong{
+	color: #C0CC00;
+}
+strong.big{
+	font-size: 23px;
 }
 /*footer{
 	position: fixed;
