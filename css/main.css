@@ -159,6 +159,12 @@ input:hover, select:hover{
 }
 .menu>li>ul>li{
 	border-bottom: 1px solid #97a002;
+	width: auto;
+	width: 201px;
+}
+.menu>li>ul>li a{
+	padding: 0 30px !important;
+	width: 100% !important;
 }
 .menu>li ul{
 	display: none;
