@@ -106,8 +106,8 @@ input:hover, select:hover{
 .content{
 	background-color: rgba(0,0,0,0.75);
 	min-height: 650px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 .menutoggle{
 	display: none;
@@ -606,10 +606,10 @@ jobbefekt{
 	text-align: center;
 }
 .btnbox a{
-    display: inline-block;
-    height: 250px;
-    width: 250px;
-    position: relative;
+	display: inline-block;
+	height: 250px;
+	width: 250px;
+	position: relative;
 }
 .btnbox a img{
 	position: absolute;
@@ -631,16 +631,32 @@ jobbefekt{
 .bigbtn{
 	float: right;
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 5px 7px 5px 10px;
 	border: 2px solid #C0CC00;
 	color: #C0CC00;
 	text-transform: uppercase;
+	transition: all 300ms ease-in-out;
+}
+.bigbtn:hover{
+	background-color: #C0CC00;
+	color: #ffffff;
 }
 .bigbtn span{
 	display: inline-block;
+	text-align: center;
 }
 .bigbtn i{
-	margin-top: -10px;
+	margin-top: 1px;
+	float: right;
+	margin-left: 7px;
+	margin-right: 3px;
+	font-size: 30px;
+	transition: margin 300ms ease-in-out;
+}
+.bigbtn:hover i{
+	margin-left: 10px;
+	margin-right: 0px;
+	color: #ffffff;
 }
 .address i{
 	content: " ";
@@ -733,8 +749,8 @@ footer ul li a:hover, .faceb:hover{
 		font-size: 14px;
 	}
 	.menu li a {
-    	width: 110px;
-    	font-size: 14px;
+		width: 110px;
+		font-size: 14px;
 	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
