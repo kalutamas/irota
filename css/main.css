@@ -162,6 +162,12 @@ input:hover, select:hover{
 	width: auto;
 	width: 201px;
 }
+.menu>li>ul.todo>li{
+	width: 122px !important;
+}
+.menu>li>ul.todo>li a{
+	padding: 0 0px !important;
+}
 .menu>li>ul>li a{
 	padding: 0 30px !important;
 	width: 100% !important;
