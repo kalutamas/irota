@@ -58,6 +58,6 @@ $( ".lang li a" ).click(function() {
 /*Toggle visibilty of goup button*/
 $(window).scroll(function () {
 	var scrollPosition = $(this).scrollTop();
-	$('.goup').attr('class', scrollPosition < 500 ? "goup" : "goup visb");
+	$('.goup').attr('class', scrollPosition < 450 ? "goup" : "goup visb");
 });
 
