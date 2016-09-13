@@ -17,10 +17,17 @@ $(document).ready(function(){
     $( ".menu>li" ).hover(function() {
       $(this).find('ul').fadeToggle(300);
     });
+    /*Menu stay green on child's hover*/
+      $('.menu>li ul').mouseenter(function(){
+       $(this).parent('li').addClass('hovered');
+      });
+      $('.menu>li ul').mouseleave(function(){
+       $(this).parent('li').removeClass('hovered');
+      });
   }
   else{
-    $( ".menu>li" ).click(function() {
-      $(this).find('ul').slideToggle();
+    $( ".menu>li .fa-plus" ).click(function() {
+      $(this).parent('li').find('ul').slideToggle();
     });
   }
   /*Show or hide menu on mibl view*/
@@ -30,13 +37,6 @@ $(document).ready(function(){
   });
 });
 
-/*Menu stay green on child's hover*/
-$('.menu>li ul').mouseenter(function(){
- $(this).parent('li').addClass('hovered');
-});
-$('.menu>li ul').mouseleave(function(){
- $(this).parent('li').removeClass('hovered');
-});
 
 /*
 $( "footer .up" ).click(function() {

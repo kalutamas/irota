@@ -60,6 +60,7 @@ ul li{
 h1, h2, h3, h4, h5{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
+	line-height: 1.2;
 }
 h2{
 	font-size: 35px;
@@ -141,6 +142,9 @@ input:hover, select:hover{
 	color: #ffffff;
 	display: inline-block;
 	font-size: 19px;
+}
+.menu>li>.fa-plus{
+	display: none;
 }
 .menu>li.active>a, .menu>li>a:hover{
 	background-color: #C0CC00;
@@ -571,8 +575,8 @@ input:hover, select:hover{
 	cursor: pointer;
 }*/
 .goup{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	display: none;
 	position: fixed;
 	bottom: 15px;
@@ -583,6 +587,7 @@ input:hover, select:hover{
 	background-position: left top;
 	text-indent: -999px;
 	cursor: pointer;
+	background-size: contain;
 }
 .goup:hover{
 	bottom: 18px;
@@ -628,7 +633,7 @@ p a:hover{
 	top:0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .btnbox a img{
@@ -743,7 +748,7 @@ footer ul li a:hover, .faceb:hover{
 /*------------------------*/
 @media (max-width:1199px) {
 	.menu li a{
-		width: 148px;
+		padding: 11px 20px;
 	}
 	.col-p{
 		padding-left: 60px;
@@ -760,8 +765,18 @@ footer ul li a:hover, .faceb:hover{
 	.menu li{
 		font-size: 14px;
 	}
+	.menu>li{
+		padding-bottom: 4px;
+	}
 	.menu li a {
-		width: 110px;
+		font-size: 14px;
+		padding: 11px 15px;
+	}
+	.menu>li ul{
+		padding-top: 9px;
+	}
+	.lang{
+		margin: 9px 0 0 15px;
 		font-size: 14px;
 	}
 }
@@ -769,17 +784,36 @@ footer ul li a:hover, .faceb:hover{
 /* mid-small */
 /*ms*/
 @media (max-width: 767px) {
+	.lang {
+		margin: 12px 0 0 0;
+	}
 	.menu{
 		display: none;
 		position: absolute;
 		top: 60px;
-   		margin-left: -15px;
+		margin-left: -15px;
 		width: 100%;
 	}
 	.menu li a .fa{
 		display: inline-block;
 		/*float: right;*/
 		margin-left: 5px;
+	}
+	.menu>li>a.drpdwn{
+		width: 90%;
+		float: left;
+	}
+	.menu>li>a .fa-angle-down{
+		display: none;
+	}
+	.menu>li>.fa-plus{
+		float: right;
+		width: 10%;
+		display: inline-block;
+		text-align: center;
+		padding: 7px 0 6px 0;
+		background-color: rgba(0,0,0,0.9);
+		border-bottom: 1px solid #fff;
 	}
 	.menu li{
 		float: none;
@@ -802,10 +836,15 @@ footer ul li a:hover, .faceb:hover{
 	.menu>li ul {
 		padding-top: 0;
 		position: relative;
-		border-bottom: 2px solid #ffffff
+		border-bottom: 2px solid #ffffff;
+		clear: both;
 	}
 	.menu>li>ul>li{
-		border-bottom: 0
+		border-bottom: 0;
+		width: 100%;
+	}
+	.menu>li>ul>li a{
+		padding: 5px 20px 5px 30px;
 	}
 	.menu>li>ul a:hover, .menu>li>ul>li>a{
 		background-color: rgba(0,0,0,0.8);
@@ -819,22 +858,41 @@ footer ul li a:hover, .faceb:hover{
 		margin-top: 17px;
 		border-radius: 4px;
 	}
+	.carousel-container{
+		position: relative;
+		height: 100vh;
+	}
+	.logocont{
+		margin-top: -212px;
+		text-align: center;
+	}
+	.logocont img {
+		margin: 0 0 10px 0;
+	}
+	.prev, .next{
+		position: absolute;
+		top: -50vh;
+	}
+	.prev{
+		left: 10px;
+	} 
+	.next{
+		right: 10px;
+	}
+	.col-p {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.goup{
+		right: 10px;
+	}
 
 }
 /* ------------------------------------------------------------------------------------------------------ */
 /* mobil */
 /*xs*/
 @media (max-width:479px) {
-	.col-p{
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-	.prev{
-		left: 8px;
-	} 
-	.next{
-		right: 8px;
-	}
+
 }
 /*mobil hamburger menu és logo nem érjen össze*/
 @media (max-width:365px) {
