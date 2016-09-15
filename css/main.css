@@ -215,6 +215,7 @@ input:hover, select:hover{
 	position: fixed;
 	height: 100%;
 	width: 100%;
+	margin-top: 70px;
 }
 .carousel, .slick-list, .slick-track{
 	height: 100%;
@@ -235,8 +236,9 @@ input:hover, select:hover{
 	background-color: #ffffff;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center top;
 }
-.carousel-container .slide1{
+/*.carousel-container .slide1{
 	background-image: url(../images/slide1.jpg);
 }
 .carousel-container .slide2{
@@ -250,7 +252,7 @@ input:hover, select:hover{
 }
 .carousel-container .slide5{
 	background-image: url(../images/slide5.jpg);
-}
+}*/
 
 .inanutshell .slide1{
 	background-image: url(../images/2C_UpperHouse_1.jpg);
@@ -814,6 +816,7 @@ footer ul li a:hover, .faceb:hover{
 		padding: 7px 0 6px 0;
 		background-color: rgba(0,0,0,0.9);
 		border-bottom: 1px solid #fff;
+		height: 27px;
 	}
 	.menu li{
 		float: none;
@@ -829,6 +832,7 @@ footer ul li a:hover, .faceb:hover{
 		height: auto;
 		border-bottom: 1px solid #ffffff;
 		text-align: left;
+		height: 27px;
 	}
 	.menu li.active{
 		border-bottom: 0;
@@ -861,6 +865,8 @@ footer ul li a:hover, .faceb:hover{
 	.carousel-container{
 		position: relative;
 		height: 100vh;
+		height: calc(100vh - 60px);
+		margin-top: 60px;
 	}
 	.logocont{
 		margin-top: -212px;
@@ -885,6 +891,284 @@ footer ul li a:hover, .faceb:hover{
 	}
 	.goup{
 		right: 10px;
+	}
+
+	.inanutshell .slide1{
+	background-image: url(../images/mobilslider/2C_UpperHouse_1.jpg);
+	}
+	.inanutshell .slide2{
+		background-image: url(../images/mobilslider/2D_GardenPool_1.jpg);
+	}
+	.inanutshell .slide3{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_1.jpg);
+	}
+	.inanutshell .slide4{
+		background-image: url(../images/mobilslider/2D_GardenPool_7.jpg);
+	}
+	.inanutshell .slide5{
+		background-image: url(../images/mobilslider/2A_LowerHouse_1.jpg);
+	}
+	.inanutshell .slide6{
+		background-image: url(../images/mobilslider/2C_UpperHouse_9.jpg);
+	}
+	.accomodation .slide1{
+		background-image: url(../images/mobilslider/2A_LowerHouse_2.jpg);
+	}
+	.accomodation .slide2{
+		background-image: url(../images/mobilslider/2A_LowerHouse_6.jpg);
+	}
+	.accomodation .slide3{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_2.jpg);
+	}
+	.accomodation .slide4{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_6.jpg);
+	}
+	.accomodation .slide5{
+		background-image: url(../images/mobilslider/2C_UpperHouse_4.jpg);
+	}
+	.accomodation .slide6{
+		background-image: url(../images/mobilslider/2C_UpperHouse_9.jpg);
+	}
+	.accomodation .slide7{
+		background-image: url(../images/mobilslider/2D_GardenPool_2.jpg);
+	}
+	.accomodation .slide8{
+		background-image: url(../images/mobilslider/2D_GardenPool_9.jpg);
+	}
+
+
+	.lowerhouse .slide1{
+		background-image: url(../images/mobilslider/2A_LowerHouse_1.jpg);
+	}
+	.lowerhouse .slide2{
+		background-image: url(../images/mobilslider/2A_LowerHouse_2.jpg);
+	}
+	.lowerhouse .slide3{
+		background-image: url(../images/mobilslider/2A_LowerHouse_3.jpg);
+	}
+	.lowerhouse .slide4{
+		background-image: url(../images/mobilslider/2A_LowerHouse_4.jpg);
+	}
+	.lowerhouse .slide5{
+		background-image: url(../images/mobilslider/2A_LowerHouse_5.jpg);
+	}
+	.lowerhouse .slide6{
+		background-image: url(../images/mobilslider/2A_LowerHouse_6.jpg);
+	}
+	.lowerhouse .slide7{
+		background-image: url(../images/mobilslider/2A_LowerHouse_7.jpg);
+	}
+
+	.middlehouse .slide1{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_1.jpg);
+	}
+	.middlehouse .slide2{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_2.jpg);
+	}
+	.middlehouse .slide3{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_3.jpg);
+	}
+	.middlehouse .slide4{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_4.jpg);
+	}
+	.middlehouse .slide5{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_5.jpg);
+	}
+	.middlehouse .slide6{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_6.jpg);
+	}
+	.middlehouse .slide7{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_7.jpg);
+	}
+	.middlehouse .slide8{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_8.jpg);
+	}
+	.middlehouse .slide9{
+		background-image: url(../images/mobilslider/2B_MiddleHouse_9.jpg);
+	}
+
+	.upperhouse .slide1{
+		background-image: url(../images/mobilslider/2C_UpperHouse_1.jpg);
+	}
+	.upperhouse .slide2{
+		background-image: url(../images/mobilslider/2C_UpperHouse_2.jpg);
+	}
+	.upperhouse .slide3{
+		background-image: url(../images/mobilslider/2C_UpperHouse_3.jpg);
+	}
+	.upperhouse .slide4{
+		background-image: url(../images/mobilslider/2C_UpperHouse_4.jpg);
+	}
+	.upperhouse .slide5{
+		background-image: url(../images/mobilslider/2C_UpperHouse_5.jpg);
+	}
+	.upperhouse .slide6{
+		background-image: url(../images/mobilslider/2C_UpperHouse_6.jpg);
+	}
+	.upperhouse .slide7{
+		background-image: url(../images/mobilslider/2C_UpperHouse_7.jpg);
+	}
+	.upperhouse .slide8{
+		background-image: url(../images/mobilslider/2C_UpperHouse_8.jpg);
+	}
+	.upperhouse .slide9{
+		background-image: url(../images/mobilslider/2C_UpperHouse_9.jpg);
+	}
+
+	.gardenandpool .slide1{
+		background-image: url(../images/mobilslider/2D_GardenPool_1.jpg);
+	}
+	.gardenandpool .slide2{
+		background-image: url(../images/mobilslider/2D_GardenPool_2.jpg);
+	}
+	.gardenandpool .slide3{
+		background-image: url(../images/mobilslider/2D_GardenPool_3.jpg);
+	}
+	.gardenandpool .slide4{
+		background-image: url(../images/mobilslider/2D_GardenPool_4.jpg);
+	}
+	.gardenandpool .slide5{
+		background-image: url(../images/mobilslider/2D_GardenPool_5.jpg);
+	}	
+	.gardenandpool .slide6{
+		background-image: url(../images/mobilslider/2D_GardenPool_6.jpg);
+	}
+	.gardenandpool .slide7{
+		background-image: url(../images/mobilslider/2D_GardenPool_7.jpg);
+	}
+	.gardenandpool .slide8{
+		background-image: url(../images/mobilslider/2D_GardenPool_8.jpg);
+	}
+	.gardenandpool .slide9{
+		background-image: url(../images/mobilslider/2D_GardenPool_9.jpg);
+	}
+
+	.bpapartment .slide1{
+		background-image: url(../images/mobilslider/2E_BudapestCityApartment_1.jpg);
+	}
+	.bpapartment .slide2{
+		background-image: url(../images/mobilslider/2E_BudapestCityApartment_2.jpg);
+	}
+	.bpapartment .slide3{
+		background-image: url(../images/mobilslider/2E_BudapestCityApartment_3.jpg);
+	}
+	.bpapartment .slide4{
+		background-image: url(../images/mobilslider/2E_BudapestCityApartment_4.jpg);
+	}
+	.bpapartment .slide5{
+		background-image: url(../images/mobilslider/2E_BudapestCityApartment_5.jpg);
+	}
+
+	.econess .slide1{
+		background-image: url(../images/mobilslider/2F_Econess.jpg);
+	}
+
+	.todo .slide1{
+		background-image: url(../images/mobilslider/4A_Birdwatching_1.jpg);
+	}
+	.todo .slide2{
+		background-image: url(../images/mobilslider/4B_CloseBy_2.jpg);
+	}
+	.todo .slide3{
+		background-image: url(../images/mobilslider/4C_FurtherAway_3.jpg);
+	}
+
+	.inirota .slide1{
+		background-image: url(../images/mobilslider/4A_InIrota_1.jpg);
+	}
+	.inirota .slide2{
+		background-image: url(../images/mobilslider/4A_InIrota_2.jpg);
+	}
+	.inirota .slide3{
+		background-image: url(../images/mobilslider/4A_InIrota_3.jpg);
+	}
+
+	.birdwatch .slide1{
+		background-image: url(../images/mobilslider/4A_Birdwatching_1.jpg);
+	}
+	.birdwatch .slide2{
+		background-image: url(../images/mobilslider/4A_Birdwatching_2.jpg);
+	}
+	.birdwatch .slide3{
+		background-image: url(../images/mobilslider/4A_Birdwatching_3.jpg);
+	}
+
+	.birdwatch .slide1{
+		background-image: url(../images/mobilslider/4A_Birdwatching_1.jpg);
+	}
+	.birdwatch .slide2{
+		background-image: url(../images/mobilslider/4A_Birdwatching_2.jpg);
+	}
+	.birdwatch .slide3{
+		background-image: url(../images/mobilslider/4A_Birdwatching_3.jpg);
+	}
+
+	.challenges .slide1{
+		background-image: url(../images/mobilslider/4A_Challenges_1.jpg);
+	}
+	.challenges .slide2{
+		background-image: url(../images/mobilslider/4A_Challenges_2.jpg);
+	}
+	.challenges .slide3{
+		background-image: url(../images/mobilslider/4A_Challenges_3.jpg);
+	}
+
+	.irotahistory .slide1{
+		background-image: url(../images/mobilslider/4A_HistoryIrota_1.jpg);
+	}
+	.irotahistory .slide2{
+		background-image: url(../images/mobilslider/4A_HistoryIrota_2.jpg);
+	}
+	.irotahistory .slide3{
+		background-image: url(../images/mobilslider/4A_HistoryIrota_3.jpg);
+	}
+
+	.closeby .slide1{
+		background-image: url(../images/mobilslider/4B_Closeby_1.jpg);
+	}
+	.closeby .slide2{
+		background-image: url(../images/mobilslider/4B_Closeby_2.jpg);
+	}
+	.closeby .slide3{
+		background-image: url(../images/mobilslider/4B_Closeby_3.jpg);
+	}
+
+	.historyvalley .slide1{
+		background-image: url(../images/mobilslider/4B_HistoryValley_1.jpg);
+	}
+	.historyvalley .slide2{
+		background-image: url(../images/mobilslider/4B_HistoryValley_2.jpg);
+	}
+	.historyvalley .slide3{
+		background-image: url(../images/mobilslider/4B_HistoryValley_3.jpg);
+	}
+
+	.furtheraway .slide1{
+		background-image: url(../images/mobilslider/4C_FurtherAway_1.jpg);
+	}
+	.furtheraway .slide2{
+		background-image: url(../images/mobilslider/4C_FurtherAway_2.jpg);
+	}
+	.furtheraway .slide3{
+		background-image: url(../images/mobilslider/4C_FurtherAway_3.jpg);
+	}
+
+	.aboutus .slide1{
+		background-image: url(../images/mobilslider/5_AboutUs.jpg);
+	}
+
+	.mansion .slide1{
+		background-image: url(../images/mobilslider/5_Mansion_1.jpg);
+	}
+	.mansion .slide2{
+		background-image: url(../images/mobilslider/5_Mansion_2.jpg);
+	}
+	.mansion .slide3{
+		background-image: url(../images/mobilslider/5_Mansion_3.jpg);
+	}
+
+	.contact .slide1{
+		background-image: url(../images/mobilslider/6_Contact&Route.jpg);
 	}
 
 }
