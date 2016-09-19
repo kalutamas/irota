@@ -3,7 +3,7 @@ $(document).ready(function(){
     infinite: true,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
-    lazyLoad: 'ondemand',
+    /*lazyLoad: 'ondemand',*/
   });
   /*Scroll to top*/
   $('.goup').click(function() {
@@ -58,6 +58,6 @@ $( ".lang li a" ).click(function() {
 /*Toggle visibilty of goup button*/
 $(window).scroll(function () {
 	var scrollPosition = $(this).scrollTop();
-	$('.goup').attr('class', scrollPosition < 450 ? "goup" : "goup visb");
+	$('.goup').attr('class', scrollPosition < 100 ? "goup" : "goup visb");
 });
 
