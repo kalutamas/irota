@@ -18,24 +18,45 @@ $(document).ready(function(){
       $(this).find('ul').fadeToggle(300);
     });
     /*Menu stay green on child's hover*/
-      $('.menu>li ul').mouseenter(function(){
-       $(this).parent('li').addClass('hovered');
-      });
-      $('.menu>li ul').mouseleave(function(){
-       $(this).parent('li').removeClass('hovered');
-      });
+    $('.menu>li ul').mouseenter(function(){
+     $(this).parent('li').addClass('hovered');
+    });
+    $('.menu>li ul').mouseleave(function(){
+     $(this).parent('li').removeClass('hovered');
+    });
   }
   else{
-    $( ".menu>li .fa-plus" ).click(function() {
-      $(this).parent('li').find('ul').slideToggle();
+    $(document).on('click','.menu>li .fa-plus',function(){
+      $(this).removeClass('fa-plus');
+      $(this).addClass('fa-minus');
+      $(this).parent('li').find('ul').slideDown();
+    });
+    $(document).on('click','.menu>li .fa-minus',function(){
+      $(this).removeClass('fa-minus');
+      $(this).addClass('fa-plus');
+      $(this).parent('li').find('ul').slideUp();
     });
   }
   /*Show or hide menu on mibl view*/
-  $('.menutoggle').click(function() {
-    console.log('haha');
-    $('.menu').slideToggle();
-  });
+
+    $(document).on('click','.menutoggle.open',function(){
+      console.log('888888');
+      $('.menu').slideUp();
+      $('.menutoggle i').removeClass('fa-times');
+      $('.menutoggle i').addClass('fa-bars');
+      $('.menutoggle').removeClass('open');
+    });
+
+    $(document).on('click','.menutoggle:not(.open)',function(){
+      console.log('asdasd');
+      $('.menu').slideDown();
+      $('.menutoggle i').removeClass('fa-bars');
+      $('.menutoggle i').addClass('fa-times');
+      $('.menutoggle').addClass('open');
+    });
+
 });
+
 
 
 /*

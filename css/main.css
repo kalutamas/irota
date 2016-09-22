@@ -136,8 +136,8 @@ input:hover, select:hover{
 .menu li a, .fb{
 	/*width: 165px;*/
 	padding: 0 30px;
-	height: 50px;
 	line-height: 50px;
+	height: 50px !important;
 	height: auto;
 	text-align: center;
 /*	line-height: 45px;*/
@@ -147,11 +147,11 @@ input:hover, select:hover{
 }
 .menu li.acc a{
 	padding: 0;
-    width: 200px;
+	width: 200px;
 }
 .menu li.todo a{
 	padding: 0;
-    width: 132px;
+	width: 132px;
 }
 .menu>li>.fa-plus{
 	display: none;
@@ -174,6 +174,10 @@ input:hover, select:hover{
 .menu>li>ul>li{
 	border-bottom: 1px solid #97a002;
 	width: auto;
+}
+.menu>li>ul>li a span {
+	line-height: 1.4;
+	display: inline-block;
 }
 .menu>li ul{
 	display: none;
@@ -214,11 +218,14 @@ input:hover, select:hover{
 .fb{
 	float: left;
 }
+.fb .fa{
+	display: none
+}
 .carousel-container{
 	position: fixed;
 	height: 100%;
 	width: 100%;
-	margin-top: 67px;
+	margin-top: 70px;
 }
 .carousel, .slick-list, .slick-track{
 	height: 100%;
@@ -693,9 +700,9 @@ p a:hover{
 	font-size: 23px;
 }
 .up{
-    font-size: 10px;
-    vertical-align: super;
-    margin: 0 2px 0 1px;
+	font-size: 10px;
+	vertical-align: super;
+	margin: 0 2px 0 1px;
 }
 /*footer{
 	position: fixed;
@@ -757,20 +764,38 @@ footer ul li a:hover, .faceb:hover{
 /*  M E D I A Q U E R Y S  */
 /*------------------------*/
 @media (max-width:1199px) {
-	.menu li a{
-		padding: 11px 20px;
+	.menu li a, .fb{
+		padding: 0 20px;
+		font-size: 17px;
 	}
 	.col-p{
 		padding-left: 60px;
 		padding-right: 60px;
+	}
+	.fb .fa{
+		display: inline-block;
+	}
+	.fb .lg{
+		display: none;
 	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
 /* csak tablet felett */
 /* md-alatt */
 @media (max-width:991px) {
+	.menu li a, .fb {
+		padding: 0 20px;
+		height: 40px !important;
+		line-height: 40px;
+	}
+	.menu>li {
+		padding-bottom: 20px !important;
+	}
 	.menuwrap{
 		height: 60px;
+	}
+	.carousel-container{
+		margin-top: 60px;
 	}
 	.menu li{
 		font-size: 14px;
@@ -780,22 +805,28 @@ footer ul li a:hover, .faceb:hover{
 	}
 	.menu li a {
 		font-size: 14px;
-		padding: 11px 15px;
+		padding: 0 15px;
 	}
-	.menu>li ul{
-		padding-top: 9px;
+	.menu li.acc a {
+		width: 136px;
+	}
+	.menu li.todo a {
+		width: 78px;
 	}
 	.lang{
-		margin: 9px 0 0 15px;
 		font-size: 14px;
+	}
+	.lang li a {
+		height: 40px;
+		line-height: 40px;
 	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
 /* mid-small */
 /*ms*/
 @media (max-width: 767px) {
-	.lang {
-		margin: 12px 0 0 0;
+	.menuwrap {
+		padding: 10px 15px;
 	}
 	.menu{
 		display: none;
@@ -810,37 +841,44 @@ footer ul li a:hover, .faceb:hover{
 		margin-left: 5px;
 	}
 	.menu>li>a.drpdwn{
-		width: 90%;
 		float: left;
 	}
 	.menu>li>a .fa-angle-down{
 		display: none;
 	}
-	.menu>li>.fa-plus{
+	.menu>li>.fa-plus, .menu>li>.fa-minus{
 		float: right;
 		width: 10%;
 		display: inline-block;
 		text-align: center;
-		padding: 7px 0 6px 0;
+		padding: 5px 0 5px 0;
 		background-color: rgba(0,0,0,0.9);
 		border-bottom: 1px solid #fff;
-		height: 27px;
+		line-height: 25px;
 	}
 	.menu li{
 		float: none;
 		clear: both;
 		margin: 0;
-		padding-bottom: 0px;
+		padding-bottom: 0px !important;
 	}
 	.menu li a{
 		padding: 5px 20px 5px 20px;
 		background-color: rgba(0,0,0,0.8);
 		display: block;
 		width: 100%;
-		height: auto;
 		border-bottom: 1px solid #ffffff;
 		text-align: left;
-		height: 27px;
+		line-height: 25px;
+		height: auto !important;
+	}
+	.menu>li.acc a, .menu>li.todo a{
+		padding: 5px 20px 5px 20px;
+		width: 90%;
+	}
+	.menu>li.acc ul a, .menu>li.todo ul a{
+		width: 100%;
+		padding: 5px 20px 5px 30px;
 	}
 	.menu li.active{
 		border-bottom: 0;
@@ -865,11 +903,21 @@ footer ul li a:hover, .faceb:hover{
 		display: block;
 		float: right;
 		color: #ffffff;
-		margin-top: 17px;
+		height: 40px;
+		line-height: 40px;
 		font-size: 18px;
 	}
 	.menutoggle .fa{
 		vertical-align: middle;
+	}
+	.lang li a {
+		line-height: 43px;
+	}
+	.fb .fa{
+		display: none;
+	}
+	.fb .lg{
+		display: inline-block;
 	}
 	.carousel-container{
 		position: relative;
