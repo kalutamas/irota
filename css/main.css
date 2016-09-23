@@ -721,6 +721,7 @@ p a:hover{
 .address span.big{
 	color: #C0CC00;
 	font-size: 23px;
+	font-weight: 300;
 }
 .up{
 	font-size: 10px;
