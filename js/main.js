@@ -82,3 +82,20 @@ $(window).scroll(function () {
 	$('.goup').attr('class', scrollPosition < 100 ? "goup" : "goup visb");
 });
 
+
+
+
+$(document).ready(function() {
+    adjustDivHeight();
+    $(window).resize(function() {
+        adjustDivHeight();
+    });
+});
+
+function adjustDivHeight() {
+    setTimeout(function() {
+        var width = $('body').width();
+        var height = width * 0.5589123;
+        $('.carousel-container').height(height);
+    }, 300);
+}

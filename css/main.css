@@ -1,6 +1,9 @@
 /*
 green: #C0CC00;
 */
+*, *:hover, *:focus, *:active{
+	outline: 0 !important;
+}
 .clearfix:after {
 	content:".";
 	display:block;
@@ -31,6 +34,7 @@ body{
 	margin: 0;
 	position: relative;
 	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
 	line-height: normal;
 	font-size: 16px;
 	font-feature-settings: "liga";
@@ -58,7 +62,7 @@ ul li{
 	list-style-type: none;
 }
 h1, h2, h3, h4, h5{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-weight: bold;
 	line-height: 1.2;
 }
@@ -68,8 +72,9 @@ h2{
 	width: 100%;
 	border-bottom: 10px solid #C0CC00;
 	font-weight: normal;
-	padding-bottom: 15px;
-	margin: 0px 0 30px 0;
+	padding-bottom: 7px;
+	margin: 0px 0 25px 0;
+	font-weight: 300;
 }
 h3{
 	font-size: 25px;
@@ -108,7 +113,7 @@ input:hover, select:hover{
 	background-color: rgba(0,0,0,0.75);
 	min-height: 650px;
 	padding-bottom: 50px;
-	padding-top: 28px;
+	padding-top: 22px;
 }
 .menutoggle{
 	display: none;
@@ -125,6 +130,13 @@ input:hover, select:hover{
 	height: 70px;
 	padding: 10px 0;
 	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+.menucontainer{
+	margin: 0 auto;
+}
+.menu{
+	float: left;
 }
 .menu>li{
 	float: left;
@@ -263,6 +275,10 @@ input:hover, select:hover{
 .carousel-container .slide5{
 	background-image: url('../images/slide5.jpg');
 }*/
+img.aggtnp{
+	margin: 0 auto;
+	display: block;
+}
 
 .inanutshell .slide1{
 	background-image: url('../images/2C_UpperHouse_1.jpg');
@@ -545,6 +561,7 @@ input:hover, select:hover{
 .next, .prev {
 	position: fixed;
 	top: 50%;
+	margin-top: -17.5px;
 	z-index: 2;
 	font-size: 30px;
 	color: #ffffff;
@@ -563,6 +580,12 @@ input:hover, select:hover{
 }
 .next:hover{
 	margin-right: -3px;
+}
+.prev.lg, .next.lg{
+	display: block;
+}
+.prev.sm, .next.sm{
+	display: none !important;
 }
 /*.goup{
 	width: 35px;
@@ -828,12 +851,16 @@ footer ul li a:hover, .faceb:hover{
 	.menuwrap {
 		padding: 10px 15px;
 	}
+	.menucontainer{
+		display: block;
+	}
 	.menu{
 		display: none;
 		position: absolute;
 		top: 60px;
 		margin-left: -15px;
 		width: 100%;
+		text-align: left;
 	}
 	.menu li a .fa{
 		display: inline-block;
@@ -848,13 +875,15 @@ footer ul li a:hover, .faceb:hover{
 	}
 	.menu>li>.fa-plus, .menu>li>.fa-minus{
 		float: right;
-		width: 10%;
+		width: 60px;
 		display: inline-block;
 		text-align: center;
 		padding: 5px 0 5px 0;
-		background-color: rgba(0,0,0,0.9);
+/*		background-color: rgba(0,0,0,0.9);*/
 		border-bottom: 1px solid #fff;
 		line-height: 25px;
+		position: absolute;
+		right: 0;
 	}
 	.menu li{
 		float: none;
@@ -874,7 +903,7 @@ footer ul li a:hover, .faceb:hover{
 	}
 	.menu>li.acc a, .menu>li.todo a{
 		padding: 5px 20px 5px 20px;
-		width: 90%;
+		width: 100%;
 	}
 	.menu>li.acc ul a, .menu>li.todo ul a{
 		width: 100%;
@@ -922,19 +951,28 @@ footer ul li a:hover, .faceb:hover{
 	.carousel-container{
 		position: relative;
 		height: 100vh;
-		height: calc(100vh - 60px);
+/*		height: calc(100vh - 60px);*/
+		height: 300px;
 		margin-top: 60px;
 	}
 	.logocont{
-		margin-top: -212px;
+		margin-top: -112px;
 		text-align: center;
 	}
 	.logocont img {
 		margin: 0 0 10px 0;
+		height: 100px;
+		width: 100px;
+	}
+	.prev.lg, .next.lg{
+		display: none !important;
+	}
+	.prev.sm, .next.sm{
+		display: block !important;
 	}
 	.prev, .next{
 		position: absolute;
-		top: -50vh;
+		top: 50%;
 	}
 	.prev{
 		left: 10px;
