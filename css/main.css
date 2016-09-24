@@ -168,6 +168,10 @@ input:hover, select:hover{
 }
 .menu>li>.fa-plus{
 	display: none;
+	cursor: pointer;
+}
+.menu>li>.fa-plus, .menu>li>.fa-minus{
+	cursor: pointer;	
 }
 .menu>li.active>a, .menu>li>a:hover{
 	background-color: #C0CC00;
