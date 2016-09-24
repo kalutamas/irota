@@ -8,7 +8,7 @@ $(document).ready(function(){
   /*Scroll to top*/
   $('.goup').click(function() {
       $('html, body').animate({
-          scrollTop: $('body').offset().top
+          scrollTop: $('html').offset().top
       }, 1000);
   });
   /*Toggle menu elements child visibility*/
@@ -40,7 +40,6 @@ $(document).ready(function(){
   /*Show or hide menu on mibl view*/
 
     $(document).on('click','.menutoggle.open',function(){
-      console.log('888888');
       $('.menu').slideUp();
       $('.menutoggle i').removeClass('fa-times');
       $('.menutoggle i').addClass('fa-bars');
@@ -48,7 +47,6 @@ $(document).ready(function(){
     });
 
     $(document).on('click','.menutoggle:not(.open)',function(){
-      console.log('asdasd');
       $('.menu').slideDown();
       $('.menutoggle i').removeClass('fa-bars');
       $('.menutoggle i').addClass('fa-times');
