@@ -158,6 +158,12 @@ input:hover, select:hover{
 	display: inline-block;
 	font-size: 19px;
 }
+.fb{
+	padding: 0 10px;
+}
+.menu li a.drpdwn .fa{
+	display: none;
+}
 .menu li.acc a{
 	padding: 0;
 	width: 200px;
@@ -236,7 +242,10 @@ input:hover, select:hover{
 	float: left;
 }
 .fb .fa{
-	display: none
+	display: inline-block;
+}
+.fb .lg{
+	display: none;
 }
 .carousel-container{
 	position: fixed;
@@ -867,6 +876,11 @@ footer ul li a:hover, .faceb:hover{
 		margin-left: -15px;
 		width: 100%;
 		text-align: left;
+		max-height: -moz-calc(100vh - 60px);
+		max-height: -webkit-calc(100vh - 60px);
+		max-height: calc(100vh - 60px);
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 	.menu li a .fa{
 		display: inline-block;
@@ -948,12 +962,12 @@ footer ul li a:hover, .faceb:hover{
 	.lang li a {
 		line-height: 43px;
 	}
-	.fb .fa{
+/*	.fb .fa{
 		display: none;
-	}
-	.fb .lg{
+	}*/
+/*	.fb .lg{
 		display: inline-block;
-	}
+	}*/
 	.carousel-container{
 		position: relative;
 		height: 100vh;

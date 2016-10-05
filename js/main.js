@@ -14,16 +14,16 @@ $(document).ready(function(){
   /*Toggle menu elements child visibility*/
   var ww = $(window).width();
   if (ww > 768){
-    $( ".menu>li" ).hover(function() {
-      $(this).find('ul').fadeToggle(300);
-    });
-    /*Menu stay green on child's hover*/
-    $('.menu>li ul').mouseenter(function(){
-     $(this).parent('li').addClass('hovered');
-    });
-    $('.menu>li ul').mouseleave(function(){
-     $(this).parent('li').removeClass('hovered');
-    });
+    // $( ".menu>li" ).hover(function() {
+    //   $(this).find('ul').fadeToggle(300);
+    // });
+    // /*Menu stay green on child's hover*/
+    // $('.menu>li ul').mouseenter(function(){
+    //  $(this).parent('li').addClass('hovered');
+    // });
+    // $('.menu>li ul').mouseleave(function(){
+    //  $(this).parent('li').removeClass('hovered');
+    // });
   }
   else{
     $(document).on('click','.menu>li .fa-plus',function(){
@@ -44,6 +44,7 @@ $(document).ready(function(){
       $('.menutoggle i').removeClass('fa-times');
       $('.menutoggle i').addClass('fa-bars');
       $('.menutoggle').removeClass('open');
+      $('.menuwrap').removeClass('open');
     });
 
     $(document).on('click','.menutoggle:not(.open)',function(){
@@ -51,6 +52,7 @@ $(document).ready(function(){
       $('.menutoggle i').removeClass('fa-bars');
       $('.menutoggle i').addClass('fa-times');
       $('.menutoggle').addClass('open');
+      $('.menuwrap').addClass('open');
     });
 
 });
@@ -87,8 +89,20 @@ $(document).ready(function() {
     adjustDivHeight();
     $(window).resize(function() {
         adjustDivHeight();
+        visiblemenu();
     });
 });
+
+function visiblemenu() {
+    var ww = $(window).width();
+    if ( ww > 768 ) {
+      console.log('menu visibel');
+      $('.menu').attr('style', function(i, style){
+          return style.replace(/display[^;]+;?/g, '');
+      });
+    }
+
+}
 
 function adjustDivHeight() {
     setTimeout(function() {
