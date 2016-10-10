@@ -86,6 +86,7 @@ $(window).scroll(function () {
 
 
 $(document).ready(function() {
+    $('.logo').delay(5000).fadeOut(400);
     adjustDivHeight();
     $(window).resize(function() {
         adjustDivHeight();
@@ -108,6 +109,6 @@ function adjustDivHeight() {
     setTimeout(function() {
         var width = $('body').width();
         var height = width * 0.5589123;
-        $('.carousel-container').height(height);
+        $('.carousel-container').height(height-320);
     }, 300);
 }

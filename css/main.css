@@ -39,7 +39,7 @@ body{
 	font-size: 16px;
 	font-feature-settings: "liga";
 	text-rendering: optimizelegibility;
-	background-color: #323232;
+	background-color: #808080;
 	color: #ffffff;
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: 'liga';
@@ -106,11 +106,11 @@ input:hover, select:hover{
 	width: 100%;
 }*/
 .contw{
-	background-color: rgba(255,255,255,0.3);
+	background-color: #3a3a3a;
 	position: relative;
 }
 .content{
-	background-color: rgba(0,0,0,0.75);
+	background-color: #171717;
 	min-height: 650px;
 	padding-bottom: 50px;
 	padding-top: 22px;
@@ -247,9 +247,19 @@ input:hover, select:hover{
 .fb .lg{
 	display: none;
 }
+.logo{
+	position: absolute;
+	z-index: 1;
+	top: 50vh;
+	margin-top: -170px;
+	left: 50%;
+	margin-left: -100px;
+}
 .carousel-container{
-	position: fixed;
+	/*position: fixed;*/
+	position: relative;
 	height: 100%;
+	height: calc(100vh - 170px);
 	width: 100%;
 	margin-top: 70px;
 }
@@ -312,28 +322,28 @@ img.aggtnp{
 .inanutshell .slide6{
 	background-image: url('../images/2C_UpperHouse_9.jpg');
 }
-.accomodation .slide1{
+.accommodation .slide1{
 	background-image: url('../images/2A_LowerHouse_2.jpg');
 }
-.accomodation .slide2{
+.accommodation .slide2{
 	background-image: url('../images/2A_LowerHouse_6.jpg');
 }
-.accomodation .slide3{
+.accommodation .slide3{
 	background-image: url('../images/2B_MiddleHouse_2.jpg');
 }
-.accomodation .slide4{
+.accommodation .slide4{
 	background-image: url('../images/2B_MiddleHouse_6.jpg');
 }
-.accomodation .slide5{
+.accommodation .slide5{
 	background-image: url('../images/2C_UpperHouse_4.jpg');
 }
-.accomodation .slide6{
+.accommodation .slide6{
 	background-image: url('../images/2C_UpperHouse_9.jpg');
 }
-.accomodation .slide7{
+.accommodation .slide7{
 	background-image: url('../images/2D_GardenPool_2.jpg');
 }
-.accomodation .slide8{
+.accommodation .slide8{
 	background-image: url('../images/2D_GardenPool_9.jpg');
 }
 
@@ -1026,28 +1036,28 @@ footer ul li a:hover, .faceb:hover{
 	.inanutshell .slide6{
 		background-image: url('../images/mobilslider/2C_UpperHouse_9.jpg');
 	}
-	.accomodation .slide1{
+	.accommodation .slide1{
 		background-image: url('../images/mobilslider/2A_LowerHouse_2.jpg');
 	}
-	.accomodation .slide2{
+	.accommodation .slide2{
 		background-image: url('../images/mobilslider/2A_LowerHouse_6.jpg');
 	}
-	.accomodation .slide3{
+	.accommodation .slide3{
 		background-image: url('../images/mobilslider/2B_MiddleHouse_2.jpg');
 	}
-	.accomodation .slide4{
+	.accommodation .slide4{
 		background-image: url('../images/mobilslider/2B_MiddleHouse_6.jpg');
 	}
-	.accomodation .slide5{
+	.accommodation .slide5{
 		background-image: url('../images/mobilslider/2C_UpperHouse_4.jpg');
 	}
-	.accomodation .slide6{
+	.accommodation .slide6{
 		background-image: url('../images/mobilslider/2C_UpperHouse_9.jpg');
 	}
-	.accomodation .slide7{
+	.accommodation .slide7{
 		background-image: url('../images/mobilslider/2D_GardenPool_2.jpg');
 	}
-	.accomodation .slide8{
+	.accommodation .slide8{
 		background-image: url('../images/mobilslider/2D_GardenPool_9.jpg');
 	}
 
