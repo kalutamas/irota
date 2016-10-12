@@ -662,6 +662,25 @@ img.aggtnp{
 .col-p p{
 	line-height: 1.4;
 }
+.list-p p{
+	padding-left: 20px;
+	position: relative;
+}
+.list-p p:before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #c0cc00;
+    top: 50%;
+    margin-top: -5px;
+}
+.beh{
+	padding-left: 15px;
+}
 p a{
 	color: #C0CC00;
  text-decoration: underline;
