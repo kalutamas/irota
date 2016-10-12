@@ -102,13 +102,19 @@ function visiblemenu() {
           return style.replace(/display[^;]+;?/g, '');
       });
     }
-
 }
 
 function adjustDivHeight() {
+  var ww = $(window).width();
+    if ( ww < 768 ) {
     setTimeout(function() {
         var width = $('body').width();
         var height = width * 0.5589123;
-        $('.carousel-container').height(height-320);
+        $('.carousel-container').height(height);
     }, 300);
+  }
 }
+
+$(window).scroll(function () {
+  adjustDivHeight();
+});

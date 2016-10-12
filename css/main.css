@@ -164,10 +164,6 @@ input:hover, select:hover{
 .menu li a.drpdwn .fa{
 	display: none;
 }
-.menu li.acc a{
-	padding: 0;
-	width: 200px;
-}
 .menu li.todo a{
 	padding: 0;
 	width: 132px;
@@ -259,7 +255,7 @@ input:hover, select:hover{
 	/*position: fixed;*/
 	position: relative;
 	height: 100%;
-	height: calc(100vh - 170px);
+	height: calc(100vh - 250px);
 	width: 100%;
 	margin-top: 70px;
 }
@@ -843,6 +839,9 @@ footer ul li a:hover, .faceb:hover{
 		height: 60px;
 	}
 	.carousel-container{
+		height: calc(100vh - 140px);
+	}
+	.carousel-container{
 		margin-top: 60px;
 	}
 	.menu li{
@@ -854,9 +853,6 @@ footer ul li a:hover, .faceb:hover{
 	.menu li a {
 		font-size: 14px;
 		padding: 0 15px;
-	}
-	.menu li.acc a {
-		width: 136px;
 	}
 	.menu li.todo a {
 		width: 78px;
