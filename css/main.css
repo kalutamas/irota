@@ -365,6 +365,18 @@ img.aggtnp{
 .lowerhouse .slide7{
 	background-image: url('../images/2A_LowerHouse_7.jpg');
 }
+.lowerhouse .slide8{
+	background-image: url('../images/2A_LowerHouse_8.jpg');
+}
+.lowerhouse .slide9{
+	background-image: url('../images/2A_LowerHouse_9.jpg');
+}
+.lowerhouse .slide10{
+	background-image: url('../images/2A_LowerHouse_10.jpg');
+}
+.lowerhouse .slide11{
+	background-image: url('../images/2A_LowerHouse_11.jpg');
+}
 
 .middlehouse .slide1{
 	background-image: url('../images/2B_MiddleHouse_1.jpg');
@@ -392,6 +404,12 @@ img.aggtnp{
 }
 .middlehouse .slide9{
 	background-image: url('../images/2B_MiddleHouse_9.jpg');
+}
+.middlehouse .slide10{
+	background-image: url('../images/2B_MiddleHouse_10.jpg');
+}
+.middlehouse .slide11{
+	background-image: url('../images/2B_MiddleHouse_11.jpg');
 }
 
 .upperhouse .slide1{
@@ -421,6 +439,12 @@ img.aggtnp{
 .upperhouse .slide9{
 	background-image: url('../images/2C_UpperHouse_9.jpg');
 }
+.upperhouse .slide10{
+	background-image: url('../images/2C_UpperHouse_10.jpg');
+}
+.upperhouse .slide11{
+	background-image: url('../images/2C_UpperHouse_11.jpg');
+}
 
 .gardenandpool .slide1{
 	background-image: url('../images/2D_GardenPool_1.jpg');
@@ -448,6 +472,12 @@ img.aggtnp{
 }
 .gardenandpool .slide9{
 	background-image: url('../images/2D_GardenPool_9.jpg');
+}
+.gardenandpool .slide10{
+	background-image: url('../images/2D_GardenPool_10.jpg');
+}
+.gardenandpool .slide11{
+	background-image: url('../images/2D_GardenPool_11.jpg');
 }
 
 .bpapartment .slide1{
@@ -488,6 +518,12 @@ img.aggtnp{
 }
 .inirota .slide3{
 	background-image: url('../images/4A_InIrota_3.jpg');
+}
+.inirota .slide4{
+	background-image: url('../images/4A_InIrota_4.jpg');
+}
+.inirota .slide5{
+	background-image: url('../images/4A_InIrota_5.jpg');
 }
 
 .birdwatch .slide1{
@@ -572,6 +608,12 @@ img.aggtnp{
 }
 .mansion .slide3{
 	background-image: url('../images/5_Mansion_3.jpg');
+}
+.mansion .slide4{
+	background-image: url('../images/5_Mansion_4.jpg');
+}
+.mansion .slide5{
+	background-image: url('../images/5_Mansion_5.jpg');
 }
 
 .contact .slide1{
