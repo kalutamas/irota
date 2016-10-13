@@ -86,8 +86,8 @@ $(window).scroll(function () {
 
 
 $(document).ready(function() {
-    $('.logo').delay(5000).fadeOut(400);
     adjustDivHeight();
+    $('.logo').delay(5000).fadeOut(400);
     $(window).resize(function() {
         adjustDivHeight();
         visiblemenu();
