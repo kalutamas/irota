@@ -84,6 +84,15 @@ $(window).scroll(function () {
 
 
 
+function visiblemenu() {
+    var ww = $(window).width();
+    if ( ww > 768 ) {
+      console.log('menu visibel');
+      $('.menu').attr('style', function(i, style){
+          return style.replace(/display[^;]+;?/g, '');
+      });
+    }
+}
 
 $(document).ready(function() {
     adjustDivHeight();
@@ -94,15 +103,6 @@ $(document).ready(function() {
     });
 });
 
-function visiblemenu() {
-    var ww = $(window).width();
-    if ( ww > 768 ) {
-      console.log('menu visibel');
-      $('.menu').attr('style', function(i, style){
-          return style.replace(/display[^;]+;?/g, '');
-      });
-    }
-}
 
 function adjustDivHeight() {
   var ww = $(window).width();
