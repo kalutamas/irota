@@ -251,6 +251,9 @@ input:hover, select:hover{
 	left: 50%;
 	margin-left: -100px;
 }
+.car-cont{
+	width: 100%;
+}
 .carousel-container{
 	/*position: fixed;*/
 	position: relative;
@@ -261,6 +264,12 @@ input:hover, select:hover{
 	height: calc(100vh - 250px);
 	width: 100%;
 	margin-top: 70px;
+}
+.car-cont .carousel-container{
+	height: 100vh;
+	height: -webkit-calc(100vh - 150px);
+	height: -moz-calc(100vh - 150px);
+	height: calc(100vh - 150px);
 }
 .carousel, .slick-list, .slick-track{
 	height: 100%;
@@ -877,6 +886,9 @@ footer ul li a:hover, .faceb:hover{
 /* csak tablet felett */
 /* md-alatt */
 @media (max-width:991px) {
+	.container{
+		width: 100%;
+	}
 	.menu li a, .fb {
 		padding: 0 20px;
 		height: 40px !important;
