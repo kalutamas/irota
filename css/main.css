@@ -251,13 +251,13 @@ input:hover, select:hover{
 .fb .lg{
 	display: none;
 }
-.logo{
-	position: absolute;
-	z-index: 1;
-	top: 50vh;
-	margin-top: -155px;
-	left: 50%;
-	margin-left: -100px;
+.logo {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -100px;
 }
 .car-cont{
 	width: 100%;
@@ -837,7 +837,6 @@ p a:hover{
 	float: none;
 	margin: 0 auto;
 }
-*/
 /*--------------------------*/
 /*  M E D I A Q U E R Y S  */
 /*------------------------*/
@@ -872,6 +871,9 @@ p a:hover{
 	.menu>li {
 		padding-bottom: 20px !important;
 	}
+	.menu li a {
+		padding: 0 13px;
+	}
 	.menuwrap{
 		height: 60px;
 	}
@@ -900,6 +902,11 @@ p a:hover{
 	.lang li a {
 		height: 40px;
 		line-height: 40px;
+		width: 33px;
+	}
+	.fb{
+		width: 33px;
+		padding: 0;
 	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
@@ -1004,10 +1011,12 @@ p a:hover{
 	}
 	.lang li a {
 		line-height: 43px;
+		width: 40px;
 	}
-/*	.fb .fa{
-		display: none;
-	}*/
+	.fb{
+		width: 40px;
+		padding: 0;
+	}
 /*	.fb .lg{
 		display: inline-block;
 	}*/
@@ -1018,11 +1027,11 @@ p a:hover{
 		height: 300px;
 		margin-top: 60px;
 	}
-	.logo{
-		width: 100px;
-		height: 100px;
-		margin-top: -155px;
-		margin-left: -50px;
+	.logo {
+	    width: 100px;
+	    height: 100px;
+	    margin-top: -50px;
+	    margin-left: -50px;
 	}
 	.logocont{
 		margin-top: -112px;

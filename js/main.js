@@ -85,12 +85,12 @@ $(window).scroll(function () {
 
 
 function visiblemenu() {
-    // var ww = $(window).width();
-    // if ( ww > 768 ) {
-    //   $('.menu').attr('style', function(i, style){
-    //       return style.replace(/display[^;]+;?/g, '');
-    //   });
-    // }
+  var ww = $(window).width();
+  if ( ww > 768 ) {
+    $('.menu').attr('style', function(i, style){
+        return style.replace(/display[^;]+;?/g, '');
+    });
+  }
 }
 
 $(document).ready(function() {
@@ -120,12 +120,12 @@ $(window).scroll(function () {
 
 
 function setmenuheight() {
-   var wh = $(window).height();
-    var ww = $(window).width();
-    if ( ww < 768 ) {
-      $('.menu').css('max-height', wh - 60);
-    console.log('wh: ' + wh);
-    }
+  var wh = $(window).height();
+  var ww = $(window).width();
+  if ( ww < 768 ) {
+    $('.menu').css('max-height', wh - 60);
+  console.log('wh: ' + wh);
+  }
 }
 $(document).ready(function() {
   setmenuheight();
