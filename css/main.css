@@ -914,164 +914,6 @@ p a:hover{
 		width: 30px;
 		padding: 0;
 	}
-}
-/* ------------------------------------------------------------------------------------------------------ */
-/* mid-small */
-/*ms*/
-@media (max-width: 767px) {
-	.menuwrap {
-		padding: 10px 15px;
-	}
-	.menucontainer{
-		display: block;
-	}
-	.menu{
-		display: none;
-		position: absolute;
-		top: 60px;
-		margin-left: -15px;
-		width: 100%;
-		text-align: left;
-		max-height: -moz-calc(100vh - 60px);
-		max-height: -webkit-calc(100vh - 60px);
-		max-height: calc(100vh - 60px);
-		overflow-y: auto;
-		overflow-x: hidden;
-	}
-	.menu li a .fa{
-		display: inline-block;
-		/*float: right;*/
-		margin-left: 5px;
-	}
-	.menu>li>a.drpdwn{
-		float: left;
-	}
-	.menu>li>a .fa-angle-down{
-		display: none;
-	}
-	.menu>li>.fa-plus, .menu>li>.fa-minus{
-		float: right;
-		width: 60px;
-		display: inline-block;
-		text-align: center;
-		padding: 5px 0 5px 0;
-/*		background-color: rgba(0,0,0,0.9);*/
-/*		border-bottom: 1px solid #fff;*/
-		line-height: 25px;
-		position: absolute;
-		right: 0;
-	}
-	.menu li{
-		float: none;
-		clear: both;
-		margin: 0;
-		padding-bottom: 0px !important;
-	}
-	.menu li a{
-		padding: 5px 20px 5px 20px;
-		background-color: rgba(0,0,0,0.8);
-		display: block;
-		width: 100%;
-		border-bottom: 1px solid #ffffff;
-		text-align: left;
-		line-height: 25px;
-		height: auto !important;
-	}
-	.menu>li.acc a, .menu>li.todo a{
-		padding: 5px 20px 5px 20px;
-		width: 100%;
-	}
-	.menu>li.acc ul a, .menu>li.todo ul a{
-		width: 100%;
-		padding: 5px 20px 5px 30px;
-	}
-	.menu li.active{
-		border-bottom: 0;
-	}
-	.menu>li ul {
-		padding-top: 0;
-		position: relative;
-		border-bottom: 2px solid #ffffff;
-		clear: both;
-	}
-	.menu>li>ul>li{
-		border-bottom: 0;
-		width: 100%;
-	}
-	.menu>li>ul>li a{
-		padding: 5px 20px 5px 30px;
-	}
-	.menu>li>ul a:hover, .menu>li>ul>li>a{
-		background-color: rgba(0,0,0,0.8);
-	}
-	.menutoggle{
-		display: block;
-		float: right;
-		color: #ffffff;
-		height: 40px;
-		line-height: 40px;
-		font-size: 18px;
-	}
-	.menutoggle .fa{
-		vertical-align: middle;
-	}
-	.lang li a {
-		line-height: 43px;
-		width: 40px;
-	}
-	.fb{
-		width: 40px;
-		padding: 0;
-	}
-/*	.fb .lg{
-		display: inline-block;
-	}*/
-	.carousel-container{
-		position: relative;
-		height: 100vh;
-/*		height: calc(100vh - 60px);*/
-		height: 300px;
-		margin-top: 60px;
-	}
-	.logo {
-	    width: 100px;
-	    height: 100px;
-	    margin-top: -50px;
-	    margin-left: -50px;
-	}
-	.logocont{
-		margin-top: -112px;
-		text-align: center;
-	}
-	.logocont img {
-		margin: 0 0 10px 0;
-		height: 100px;
-		width: 100px;
-	}
-	.prev.lg, .next.lg{
-		display: none !important;
-	}
-	.prev.sm, .next.sm{
-		display: block !important;
-	}
-	.prev, .next{
-		position: absolute;
-		top: 50%;
-	}
-	.prev{
-		left: 10px;
-	} 
-	.next{
-		right: 10px;
-	}
-	.col-p {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.goup{
-		right: 10px;
-	}
-
 	.inanutshell .slide1{
 		background-image: url('../images/mobilslider/2C_UpperHouse_1.jpg');
 	}
@@ -1370,7 +1212,163 @@ p a:hover{
 	.contact .slide1{
 		background-image: url('../images/mobilslider/6_Contact&Route.JPG');
 	}
-
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* mid-small */
+/*ms*/
+@media (max-width: 767px) {
+	.menuwrap {
+		padding: 10px 15px;
+	}
+	.menucontainer{
+		display: block;
+	}
+	.menu{
+		display: none;
+		position: absolute;
+		top: 60px;
+		margin-left: -15px;
+		width: 100%;
+		text-align: left;
+		max-height: -moz-calc(100vh - 60px);
+		max-height: -webkit-calc(100vh - 60px);
+		max-height: calc(100vh - 60px);
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.menu li a .fa{
+		display: inline-block;
+		/*float: right;*/
+		margin-left: 5px;
+	}
+	.menu>li>a.drpdwn{
+		float: left;
+	}
+	.menu>li>a .fa-angle-down{
+		display: none;
+	}
+	.menu>li>.fa-plus, .menu>li>.fa-minus{
+		float: right;
+		width: 60px;
+		display: inline-block;
+		text-align: center;
+		padding: 5px 0 5px 0;
+/*		background-color: rgba(0,0,0,0.9);*/
+/*		border-bottom: 1px solid #fff;*/
+		line-height: 25px;
+		position: absolute;
+		right: 0;
+	}
+	.menu li{
+		float: none;
+		clear: both;
+		margin: 0;
+		padding-bottom: 0px !important;
+	}
+	.menu li a{
+		padding: 5px 20px 5px 20px;
+		background-color: rgba(0,0,0,0.8);
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #ffffff;
+		text-align: left;
+		line-height: 25px;
+		height: auto !important;
+	}
+	.menu>li.acc a, .menu>li.todo a{
+		padding: 5px 20px 5px 20px;
+		width: 100%;
+	}
+	.menu>li.acc ul a, .menu>li.todo ul a{
+		width: 100%;
+		padding: 5px 20px 5px 30px;
+	}
+	.menu li.active{
+		border-bottom: 0;
+	}
+	.menu>li ul {
+		padding-top: 0;
+		position: relative;
+		border-bottom: 2px solid #ffffff;
+		clear: both;
+	}
+	.menu>li>ul>li{
+		border-bottom: 0;
+		width: 100%;
+	}
+	.menu>li>ul>li a{
+		padding: 5px 20px 5px 30px;
+	}
+	.menu>li>ul a:hover, .menu>li>ul>li>a{
+		background-color: rgba(0,0,0,0.8);
+	}
+	.menutoggle{
+		display: block;
+		float: right;
+		color: #ffffff;
+		height: 40px;
+		line-height: 40px;
+		font-size: 18px;
+	}
+	.menutoggle .fa{
+		vertical-align: middle;
+	}
+	.lang li a {
+		line-height: 43px;
+		width: 40px;
+	}
+	.fb{
+		width: 40px;
+		padding: 0;
+	}
+/*	.fb .lg{
+		display: inline-block;
+	}*/
+	.carousel-container{
+		position: relative;
+		height: 100vh;
+/*		height: calc(100vh - 60px);*/
+		height: 300px;
+		margin-top: 60px;
+	}
+	.logo {
+	    width: 100px;
+	    height: 100px;
+	    margin-top: -50px;
+	    margin-left: -50px;
+	}
+	.logocont{
+		margin-top: -112px;
+		text-align: center;
+	}
+	.logocont img {
+		margin: 0 0 10px 0;
+		height: 100px;
+		width: 100px;
+	}
+	.prev.lg, .next.lg{
+		display: none !important;
+	}
+	.prev.sm, .next.sm{
+		display: block !important;
+	}
+	.prev, .next{
+		position: absolute;
+		top: 50%;
+	}
+	.prev{
+		left: 10px;
+	} 
+	.next{
+		right: 10px;
+	}
+	.col-p {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.goup{
+		right: 10px;
+	}
 }
 /* ------------------------------------------------------------------------------------------------------ */
 /* mobil */
