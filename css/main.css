@@ -720,8 +720,11 @@ img.aggtnp{
 	height: 10px;
 	width: 10px;
 	background-color: #c0cc00;
-	top: 11px;
+	top: 13px;
 	margin-top: -5px;
+	background-image: url('../images/bullet.png');
+	background-repeat: no-repeat;
+	background-position: top left;
 }
 .beh{
 	padding-left: 15px;
@@ -976,8 +979,8 @@ p a:hover{
 	.lowerhouse .slide8{
 		background-image: url('../images/mobilslider/2A_LowerHouse_8.jpg');
 	}
-	.lowerhouse .slide10{
-		background-image: url('../images/mobilslider/2A_LowerHouse_10.jpg');
+	.lowerhouse .slide9{
+		background-image: url('../images/mobilslider/2A_LowerHouse_9.jpg');
 	}
 
 	.middlehouse .slide1{
