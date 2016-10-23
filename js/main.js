@@ -105,7 +105,7 @@ $(document).ready(function() {
 
 function adjustDivHeight() {
   var ww = $(window).width();
-    if ( ww < 768 ) {
+    if ( ww < 992 ) {
     setTimeout(function() {
         var width = $('body').width();
         var height = width * 0.5589123;

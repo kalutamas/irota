@@ -514,19 +514,19 @@ img.aggtnp{
 }
 
 .inirota .slide1{
-	background-image: url('../images/4A_InIrota_1.jpg');
+	background-image: url('../images/4A_InIrota_5.jpg');
 }
 .inirota .slide2{
-	background-image: url('../images/4A_InIrota_2.jpg');
+	background-image: url('../images/4A_InIrota_1.jpg');
 }
 .inirota .slide3{
-	background-image: url('../images/4A_InIrota_3.jpg');
+	background-image: url('../images/4A_InIrota_2.jpg');
 }
 .inirota .slide4{
-	background-image: url('../images/4A_InIrota_4.jpg');
+	background-image: url('../images/4A_InIrota_3.jpg');
 }
 .inirota .slide5{
-	background-image: url('../images/4A_InIrota_5.jpg');
+	background-image: url('../images/4A_InIrota_4.jpg');
 }
 
 .birdwatch .slide1{
@@ -793,7 +793,7 @@ p a:hover{
 	text-transform: uppercase;
 	transition: all 300ms ease-in-out;
 	font-size: 13px;
-	margin-left: 15px;
+	margin: 15px 0 30px 15px;
 }
 .bigbtn:hover{
 	background-color: #C0CC00;
@@ -1256,19 +1256,19 @@ p a:hover{
 	}
 
 	.inirota .slide1{
-		background-image: url('../images/mobilslider/4A_InIrota_1.jpg');
+		background-image: url('../images/mobilslider/4A_InIrota_5.jpg');
 	}
 	.inirota .slide2{
-		background-image: url('../images/mobilslider/4A_InIrota_2.jpg');
+		background-image: url('../images/mobilslider/4A_InIrota_1.jpg');
 	}
 	.inirota .slide3{
-		background-image: url('../images/mobilslider/4A_InIrota_3.jpg');
+		background-image: url('../images/mobilslider/4A_InIrota_2.jpg');
 	}
 	.inirota .slide4{
-		background-image: url('../images/mobilslider/4A_InIrota_4.jpg');
+		background-image: url('../images/mobilslider/4A_InIrota_3.jpg');
 	}
 	.inirota .slide5{
-		background-image: url('../images/mobilslider/4A_InIrota_5.jpg');
+		background-image: url('../images/mobilslider/4A_InIrota_4.jpg');
 	}
 
 	.birdwatch .slide1{
