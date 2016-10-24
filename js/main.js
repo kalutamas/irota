@@ -39,21 +39,23 @@ $(document).ready(function(){
   }
   /*Show or hide menu on mibl view*/
 
-    $(document).on('click','.menutoggle.open',function(){
-      $('.menu').slideUp();
-      $('.menutoggle i').removeClass('fa-times');
-      $('.menutoggle i').addClass('fa-bars');
-      $('.menutoggle').removeClass('open');
-      $('.menuwrap').removeClass('open');
-    });
+  $(document).on('click','.menutoggle.open',function(){
+    $('.menu').slideUp();
+    $('.menutoggle i').removeClass('fa-times');
+    $('.menutoggle i').addClass('fa-bars');
+    $('.menutoggle').removeClass('open');
+    $('.menuwrap').removeClass('open');
+    $('html').removeClass('menuopen');
+  });
 
-    $(document).on('click','.menutoggle:not(.open)',function(){
-      $('.menu').slideDown();
-      $('.menutoggle i').removeClass('fa-bars');
-      $('.menutoggle i').addClass('fa-times');
-      $('.menutoggle').addClass('open');
-      $('.menuwrap').addClass('open');
-    });
+  $(document).on('click','.menutoggle:not(.open)',function(){
+    $('.menu').slideDown();
+    $('.menutoggle i').removeClass('fa-bars');
+    $('.menutoggle i').addClass('fa-times');
+    $('.menutoggle').addClass('open');
+    $('.menuwrap').addClass('open');
+    $('html').addClass('menuopen');
+  });
 
 });
 
