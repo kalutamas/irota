@@ -122,11 +122,18 @@ $(window).scroll(function () {
 
 
 function setmenuheight() {
-  var wh = $(window).height();
+  var wh = $(window).outerHeight();
   var ww = $(window).width();
   if ( ww < 768 ) {
-    $('.menu').css('max-height', wh - 60);
-  console.log('wh: ' + wh);
+    if(window.orientation == 0) // Portrait
+      {  
+        $('.menu').css('max-height', wh - 60);
+        console.log('wh: ' + wh);
+        
+      }
+      else{
+        $('.menu').css('max-height', 'inherit');
+      }
   }
 }
 $(document).ready(function() {
@@ -134,4 +141,7 @@ $(document).ready(function() {
 });
 $(window).resize(function() {
   setmenuheight();
+});
+$(window).on("orientationchange",function(){
+ setmenuheight();
 });

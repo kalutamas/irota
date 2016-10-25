@@ -30,12 +30,13 @@ html[xmlns] .clearfix {
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
-html.menuopen{
+/*html.menuopen{
 	position: fixed;
-}
+}*/
 html.menuopen, html.menuopen body{
-	width: 100%;
+	/*width: 100%;
 	height: 100%;
+	overflow: hidden;*/
 	overflow: hidden;
 }
 body{
@@ -260,12 +261,12 @@ input:hover, select:hover{
 	display: none;
 }
 .logo {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    margin-top: -100px;
-    left: 50%;
-    margin-left: -100px;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -100px;
 }
 .car-cont{
 	width: 100%;
@@ -1223,6 +1224,9 @@ p a:hover{
 /* mid-small */
 /*ms*/
 @media (max-width: 767px) {
+	a{
+		transition: none;
+	}
 	.menuwrap {
 		padding: 10px 15px;
 	}
@@ -1339,10 +1343,10 @@ p a:hover{
 		margin-top: 60px;
 	}
 	.logo {
-	    width: 100px;
-	    height: 100px;
-	    margin-top: -50px;
-	    margin-left: -50px;
+		width: 100px;
+		height: 100px;
+		margin-top: -50px;
+		margin-left: -50px;
 	}
 	.logocont{
 		margin-top: -112px;
@@ -1382,4 +1386,100 @@ p a:hover{
 /*xs*/
 @media (max-width:479px) {
 
+}
+
+
+/*iPhone 6 in landscape*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+	.menuwrap {
+		position: relative;
+	}
+	.carousel-container {
+		margin-top: 0;
+	}
+	.menu{
+		max-height: inherit !important;
+		overflow: auto;
+
+	}
+
+}
+/*iPhone 6 Plus in landscape*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+	.menuwrap {
+		position: relative;
+	}
+	.carousel-container {
+		margin-top: 0;
+	}
+	.menu{
+		max-height: inherit !important;
+		overflow: auto;
+
+	}
+
+}
+iPhone 5 & 5S in landscape
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+	.menuwrap {
+		position: relative;
+	}
+	.carousel-container {
+		margin-top: 0;
+	}
+	.menu{
+		max-height: inherit !important;
+		overflow: auto;
+
+	}
+
+}
+/*iPhone 2G-4S in landscape*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) { 
+	.menuwrap {
+		position: relative;
+	}
+	.carousel-container {
+		margin-top: 0;
+	}
+	.menu{
+		max-height: inherit !important;
+		overflow: auto;
+	}
+
+}
+
+/* iPhone */
+/*@media only screen and (width:320px) and (device-width:320px) and (device-height:480px) and (orientation: landscape) {
+	body {
+		-webkit-transform: scale(0.667);
+		-webkit-transform-origin: top right;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 480px;
+	}
+}*/
+
+/*iPad in landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+	.container{
+		max-width: 100%;
+		width: 100%;
+	}
 }
