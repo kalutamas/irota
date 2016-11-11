@@ -84,6 +84,7 @@ h2{
 	padding-bottom: 7px;
 	margin: 0px 0 25px 0;
 	font-weight: 300;
+	text-transform: lowercase;
 }
 h3{
 /*
