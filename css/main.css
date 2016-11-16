@@ -185,6 +185,9 @@ input:hover, select:hover{
 .menucontainer{
 	margin: 0 auto;
 }
+.menucontainer.container {
+    padding: 0;
+}
 .menu{
 	float: left;
 }
@@ -197,7 +200,7 @@ input:hover, select:hover{
 }
 .menu li a, .fb{
 	/*width: 165px;*/
-	padding: 0 30px;
+	padding: 0 27px;
 	line-height: 50px;
 	height: 50px !important;
 	height: auto;
@@ -886,7 +889,7 @@ p a:hover{
 /*------------------------*/
 @media (max-width:1199px) {
 	.menu li a, .fb{
-		padding: 0 20px;
+		padding: 0 17px;
 		font-size: 17px;
 	}
 	.col-p{
@@ -907,6 +910,9 @@ p a:hover{
 	.container{
 		width: 100%;
 		max-width: 100%;
+	}
+	.menucontainer.container {
+    	width: auto;
 	}
 	.menu li a, .fb {
 		padding: 0 20px;
@@ -936,13 +942,15 @@ p a:hover{
 	}
 	.menu li a {
 		font-size: 14px;
-		padding: 0 15px;
+		padding: 0 13px;
 	}
 	.menu li.todo a {
 		width: 78px;
 	}
 	.lang{
 		font-size: 14px;
+		position: relative;
+		z-index: 9;
 	}
 	.lang li a {
 		height: 40px;
