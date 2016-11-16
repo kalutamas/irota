@@ -1,6 +1,38 @@
 /*
 green: #C0CC00;
 */
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../fonts/ubuntu-l-webfont.eot');
+    src: url('../fonts/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-l-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-l-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-l-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('../fonts/ubuntu-r-webfont.eot');
+    src: url('../fonts/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-r-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-r-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('../fonts/robotocondensed-regular-webfont.eot');
+    src: url('../fonts/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('../fonts/robotocondensed-regular-webfont.woff') format('woff'),
+         url('../fonts/robotocondensed-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 *, *:hover, *:focus, *:active{
 	outline: 0 !important;
 }
@@ -42,8 +74,7 @@ html.menuopen, html.menuopen body{
 body{
 	margin: 0;
 	position: relative;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
+	font-family: 'ubunturegular';
 	line-height: normal;
 	font-size: 16px;
 	font-feature-settings: "liga";
@@ -71,8 +102,8 @@ ul li{
 	list-style-type: none;
 }
 h1, h2, h3, h4, h5{
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: bold;
+/*	font-family: 'ubunturegular', sans-serif;
+	font-weight: bold;*/
 	line-height: 1.2;
 }
 h2{
@@ -80,10 +111,10 @@ h2{
 	color: #C0CC00;
 	width: 100%;
 	border-bottom: 10px solid #C0CC00;
-	font-weight: normal;
+	font-family: 'ubuntulight';
+	font-weight: 300;
 	padding-bottom: 7px;
 	margin: 0px 0 25px 0;
-	font-weight: 300;
 	text-transform: lowercase;
 }
 h3{
@@ -97,7 +128,7 @@ h3{
 */
 
 	font-size: 25px;
-	font-weight: normal;
+	font-family: 'ubuntulight';
 	color: #ffffff;
 	width: 100%;
 	margin: 25px 0 -15px 0;
@@ -148,7 +179,7 @@ input:hover, select:hover{
 	background-color: #2c2d2e;
 	height: 70px;
 	padding: 10px 0;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'roboto_condensedregular', sans-serif;
 	text-align: center;
 }
 .menucontainer{
@@ -839,7 +870,7 @@ p a:hover{
 .address span.big{
 	color: #C0CC00;
 	font-size: 23px;
-	font-weight: 300;
+	font-family: 'ubuntulight';
 }
 .up{
 	font-size: 10px;
