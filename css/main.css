@@ -773,16 +773,25 @@ img.aggtnp{
 .beh{
 	padding-left: 15px;
 }
+p.text-center{
+	text-align: center;
+}
 p a{
 	color: #C0CC00;
- text-decoration: underline;
+ 	text-decoration: underline;
 }
-p a:hover{
+p a:not(.anp):hover{
 	background-color: #C0CC00;
 	background-color: rgba(192,204,0,0.5);
 	color: #ffffff;
 	text-decoration: none;
 	padding: 0 2px;
+}
+p a.anp{
+	display: inline-block;
+}
+p a.anp:hover{
+	opacity: 0.5;
 }
 .btnbox-wrap{
 	margin-top: 45px;
